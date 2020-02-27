@@ -9,7 +9,7 @@
 
 ### Directories ###
 ## ignore analysis directory, results, etc.:
-analysis/
+analyses/roh/analysis/
 
 ### Results ###
 
