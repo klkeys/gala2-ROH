@@ -212,7 +212,7 @@ phenotype.df = fread(phenotype.filepath, header = TRUE)
 phenotype.df = phenotype.df %>%
     dplyr::filter(Pop_Code == pop.code)
 
-fwrite(phenotype.df, file = paste0(pop.code, ".txt"))
+fwrite(phenotype.df, file = file.path(out.dir, paste0(pop.code, ".txt")))
 
 print("Loading data complete")
 

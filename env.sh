@@ -16,6 +16,7 @@ set -e
 
 # binaries
 RSCRIPT="/usr/bin/Rscript"
+PLINK=""
 
 # directories
 MYHOME="" ## set to absolute path of user $HOME
