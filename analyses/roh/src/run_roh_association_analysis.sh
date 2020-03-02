@@ -16,8 +16,6 @@ sage_roh_dir=${sage_roh_dir}
 phenofile=${phenofile}
 
 # scripts
-#R_environment_script="${codedir}/set_R_environment.R"
-#R_parse_phenotypes="${thisdir}/parse_phenotype_data.R"
 R_run_analysis="${thisdir}/run_roh_association_analysis.R"
 
 # variables

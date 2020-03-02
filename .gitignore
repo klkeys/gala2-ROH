@@ -10,6 +10,7 @@
 ### Directories ###
 ## ignore analysis directory, results, etc.:
 analyses/roh/analysis/
+analyses/gwas/analysis/
 
 ### Results ###
 

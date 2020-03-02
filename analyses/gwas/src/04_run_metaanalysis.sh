@@ -1,13 +1,31 @@
 #!/usr/bin/env bash
+# ================================================================================
+# copyright Asthma Collaboratory (2020)
+# coded by Kevin L. Keys 
+#
+# This BASH script runs METAL to meta-analyze population-specific GWAS results. 
+# METAL is called once for each phenotype, using all 3 populations (AA, MX, PR).
+# Each phenotype is run in serial, so analysis can take awhile.
+#
+# Call:
+#
+#     bash 04_run_metaanalysis.sh 
+# ================================================================================
 
+# load environment variables
 source ../../../.env.sh
 
+# binary executables
 METAL=${METAL}
+
+# METAL parameters
+metal_scheme="STDERR"
+metal_verbose="OFF"
+metal_genomiccontrol="ON"
 
 # loop over phenotypes
 # will run once per pheno
 # breaking convention here: will not indent within loop in order to preserve here-doc segments
-
 for i in ${!phenos[@]}; do
 
 pheno=${phenos[$i]}
@@ -29,13 +47,13 @@ if [[ "${lm_type}" == "logistic" ]]; then
     effect="log(OR)"
 fi
 
-# seed METAL control file
+# seed METAL control file with an appropriate header
 # this clobbers any previous METAL file for the phenotype
 cat << nothingelsematters > ${metal_commandfile}
-SCHEME STDERR
+SCHEME ${metal_scheme} 
 OUTFILE ${metalpfx} txt
-VERBOSE OFF
-GENOMICCONTROL ON
+VERBOSE ${metal_verbose} 
+GENOMICCONTROL ${metal_genomiccontrol} 
 nothingelsematters
 
 for j in ${!pops[@]}; do
