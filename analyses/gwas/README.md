@@ -4,7 +4,7 @@ Genome-wide association analysis of GALA II and SAGE subjects in the ROH associa
 ## Overview
 
 This code runs genome-wide association tests for the phenotypes analyzed in the ROH association study.
-Association testing is performed with [PLINK 1.9]((https://www.cog-genomics.org/plink2).
+Association testing is performed with [PLINK 1.9](https://www.cog-genomics.org/plink2).
 Results are meta-analyzed with [METAL](https://genome.sph.umich.edu/wiki/METAL).
 
 There are four steps to the analyses:
