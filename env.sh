@@ -29,7 +29,20 @@ scratchdir="${analysisdir}/scratch"
 datadir="${analysisdir}/data"
 codedir="${thisdir}/R"
 
-# we're assuming that these are already made...
+# directories for imputed genotype data
+genodir_aa=""
+genodir_mx=""
+genodir_pr=""
+
+genodirs=(${genodir_aa} ${genodir_mx} ${genodir_pr})
+
+# directories for genotype array data
+genodir_gala=""
+genodir_sage=""
+genodir_gala_pfx=""
+genodir_sage_pfx=""
+
+# assuming that these are already made...
 gala_roh_dir="${datadir}/GALA_ROH"
 sage_roh_dir="${datadir}/SAGE_ROH"
 phenofile="${datadir}/GALA_SAGE_ROH_merged_phenotypes.txt"
@@ -80,7 +93,7 @@ ncores=22
 # probes with < 2 people with a ROH segument have no variance and can yield numeric errors 
 min_samples_at_probe=8
 
-# file prefixes for GALA, SAGE
-galapfx="GALA2_mergedLAT-LATP_noParents_030816"
-sagepfx="SAGE_mergedLAT-LATP_030816"
+# file prefixes for GALA, SAGE genotype files
+galapfx=""
+sagepfx=""
 # ---

@@ -1,0 +1,4347 @@
+allexport      	off
+braceexpand    	on
+emacs          	off
+errexit        	off
+errtrace       	off
+functrace      	off
+hashall        	on
+histexpand     	off
+history        	off
+ignoreeof      	off
+interactive-comments	on
+keyword        	off
+monitor        	off
+noclobber      	off
+noexec         	off
+noglob         	off
+nolog          	off
+notify         	off
+nounset        	on
+onecmd         	off
+physical       	off
+pipefail       	off
+posix          	off
+privileged     	off
+verbose        	off
+vi             	off
+xtrace         	off
+Parsed options:
+$phenotype_name
+[1] "Pre_FEV1"
+
+$covariates
+[1] "Age,Sex,Asthma_Status,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "AA"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/Pre_FEV1"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH/SAGE_mergedLAT-LATP_030816"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  AA 
+[1] "Loading data complete"
+Model formula specified:
+[1] "Pre_FEV1 ~ one.roh.snp + Age + Sex + Asthma_Status + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  AA 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+starting worker for localhost:11296 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  28637 
+Data prepared on worker  28644 
+Data prepared on worker  28630 
+Data prepared on worker  28623 
+Data prepared on worker  28595 
+Data prepared on worker  28616 
+Data prepared on worker  28581 
+Data prepared on worker  28609 
+Data prepared on worker  28588 
+Data prepared on worker  28602 
+Data prepared on worker  28553 
+Data prepared on worker  28567 
+Data prepared on worker  28574 
+Data prepared on worker  28546 
+Data prepared on worker  28560 
+Data prepared on worker  28539 
+Data prepared on worker  28501 
+Data prepared on worker  28475 
+Data prepared on worker  28448 
+Data prepared on worker  28520 
+Data prepared on worker  28418 
+Data prepared on worker  28425 
+Linear model fitted on worker  28637 
+Linear model fitted on worker  28644 
+Analyzed data written on worker  28637 
+Results written on worker  28637 
+Deviances written on worker  28637 
+Null deviances written on worker  28637 
+Linear model fitted on worker  28623 
+Analyzed data written on worker  28644 
+Results written on worker  28644 
+Deviances written on worker  28644 
+Null deviances written on worker  28644 
+Linear model fitted on worker  28630 
+Linear model fitted on worker  28616 
+Linear model fitted on worker  28609 
+Linear model fitted on worker  28595 
+Linear model fitted on worker  28588 
+Linear model fitted on worker  28581 
+Linear model fitted on worker  28602 
+Analyzed data written on worker  28623 
+Results written on worker  28623 
+Deviances written on worker  28623 
+Null deviances written on worker  28623 
+Analyzed data written on worker  28630 
+Results written on worker  28630 
+Deviances written on worker  28630 
+Null deviances written on worker  28630 
+Analyzed data written on worker  28616 
+Results written on worker  28616 
+Deviances written on worker  28616 
+Null deviances written on worker  28616 
+Linear model fitted on worker  28553 
+Analyzed data written on worker  28609 
+Results written on worker  28609 
+Deviances written on worker  28609 
+Null deviances written on worker  28609 
+Analyzed data written on worker  28595 
+Results written on worker  28595 
+Deviances written on worker  28595 
+Null deviances written on worker  28595 
+Analyzed data written on worker  28588 
+Results written on worker  28588 
+Deviances written on worker  28588 
+Null deviances written on worker  28588 
+Analyzed data written on worker  28581 
+Results written on worker  28581 
+Deviances written on worker  28581 
+Null deviances written on worker  28581 
+Linear model fitted on worker  28567 
+Linear model fitted on worker  28560 
+Linear model fitted on worker  28574 
+Analyzed data written on worker  28602 
+Results written on worker  28602 
+Deviances written on worker  28602 
+Null deviances written on worker  28602 
+Linear model fitted on worker  28539 
+Linear model fitted on worker  28546 
+Linear model fitted on worker  28501 
+Linear model fitted on worker  28475 
+Analyzed data written on worker  28553 
+Results written on worker  28553 
+Deviances written on worker  28553 
+Null deviances written on worker  28553 
+Linear model fitted on worker  28448 
+Linear model fitted on worker  28520 
+Analyzed data written on worker  28560 
+Results written on worker  28560 
+Deviances written on worker  28560 
+Null deviances written on worker  28560 
+Analyzed data written on worker  28567 
+Results written on worker  28567 
+Deviances written on worker  28567 
+Null deviances written on worker  28567 
+Analyzed data written on worker  28574 
+Results written on worker  28574 
+Deviances written on worker  28574 
+Null deviances written on worker  28574 
+Linear model fitted on worker  28418 
+Linear model fitted on worker  28425 
+Analyzed data written on worker  28546 
+Results written on worker  28546 
+Deviances written on worker  28546 
+Null deviances written on worker  28546 
+Analyzed data written on worker  28539 
+Results written on worker  28539 
+Deviances written on worker  28539 
+Null deviances written on worker  28539 
+Analyzed data written on worker  28501 
+Results written on worker  28501 
+Deviances written on worker  28501 
+Null deviances written on worker  28501 
+Analyzed data written on worker  28475 
+Results written on worker  28475 
+Deviances written on worker  28475 
+Null deviances written on worker  28475 
+Analyzed data written on worker  28448 
+Results written on worker  28448 
+Deviances written on worker  28448 
+Null deviances written on worker  28448 
+Analyzed data written on worker  28520 
+Results written on worker  28520 
+Deviances written on worker  28520 
+Null deviances written on worker  28520 
+Analyzed data written on worker  28418 
+Results written on worker  28418 
+Deviances written on worker  28418 
+Null deviances written on worker  28418 
+Analyzed data written on worker  28425 
+Results written on worker  28425 
+Deviances written on worker  28425 
+Null deviances written on worker  28425 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Type: DONE 
+Perform association analysis complete.
+Type: DONE 
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  3.675436e-06 
+Suggestive threshold:  3.675436e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "Pre_FEV1"
+
+$covariates
+[1] "Age,Sex,Asthma_Status,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "MX"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/Pre_FEV1"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH/GALA2_mergedLAT-LATP_noParents_030816_MX"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  MX 
+[1] "Loading data complete"
+Model formula specified:
+[1] "Pre_FEV1 ~ one.roh.snp + Age + Sex + Asthma_Status + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  MX 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+starting worker for localhost:11282 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  31138 
+Data prepared on worker  31145 
+Data prepared on worker  31124 
+Data prepared on worker  31131 
+Data prepared on worker  31117 
+Data prepared on worker  31110 
+Data prepared on worker  31096 
+Data prepared on worker  31088 
+Data prepared on worker  31081 
+Data prepared on worker  31103 
+Data prepared on worker  31053 
+Data prepared on worker  31067 
+Data prepared on worker  31074 
+Data prepared on worker  31060 
+Data prepared on worker  31039 
+Data prepared on worker  31046 
+Data prepared on worker  31018 
+Data prepared on worker  31025 
+Data prepared on worker  31032 
+Data prepared on worker  30997 
+Data prepared on worker  31004 
+Data prepared on worker  31011 
+Linear model fitted on worker  31138 
+Linear model fitted on worker  31145 
+Linear model fitted on worker  31124 
+Analyzed data written on worker  31138 
+Results written on worker  31138 
+Deviances written on worker  31138 
+Null deviances written on worker  31138 
+Linear model fitted on worker  31131 
+Analyzed data written on worker  31145 
+Results written on worker  31145 
+Deviances written on worker  31145 
+Null deviances written on worker  31145 
+Linear model fitted on worker  31110 
+Linear model fitted on worker  31117 
+Linear model fitted on worker  31088 
+Linear model fitted on worker  31081 
+Linear model fitted on worker  31096 
+Linear model fitted on worker  31103 
+Analyzed data written on worker  31124 
+Results written on worker  31124 
+Deviances written on worker  31124 
+Null deviances written on worker  31124 
+Analyzed data written on worker  31131 
+Results written on worker  31131 
+Deviances written on worker  31131 
+Null deviances written on worker  31131 
+Linear model fitted on worker  31053 
+Linear model fitted on worker  31074 
+Linear model fitted on worker  31067 
+Analyzed data written on worker  31117 
+Results written on worker  31117 
+Deviances written on worker  31117 
+Null deviances written on worker  31117 
+Linear model fitted on worker  31060 
+Analyzed data written on worker  31110 
+Results written on worker  31110 
+Deviances written on worker  31110 
+Null deviances written on worker  31110 
+Linear model fitted on worker  31046 
+Analyzed data written on worker  31088 
+Results written on worker  31088 
+Deviances written on worker  31088 
+Null deviances written on worker  31088 
+Analyzed data written on worker  31096 
+Results written on worker  31096 
+Deviances written on worker  31096 
+Null deviances written on worker  31096 
+Analyzed data written on worker  31081 
+Results written on worker  31081 
+Deviances written on worker  31081 
+Null deviances written on worker  31081 
+Linear model fitted on worker  31039 
+Analyzed data written on worker  31103 
+Results written on worker  31103 
+Deviances written on worker  31103 
+Null deviances written on worker  31103 
+Linear model fitted on worker  31025 
+Linear model fitted on worker  31018 
+Linear model fitted on worker  31032 
+Linear model fitted on worker  31011 
+Analyzed data written on worker  31053 
+Results written on worker  31053 
+Deviances written on worker  31053 
+Null deviances written on worker  31053 
+Linear model fitted on worker  31004 
+Analyzed data written on worker  31074 
+Results written on worker  31074 
+Deviances written on worker  31074 
+Null deviances written on worker  31074 
+Linear model fitted on worker  30997 
+Analyzed data written on worker  31060 
+Results written on worker  31060 
+Deviances written on worker  31060 
+Null deviances written on worker  31060 
+Analyzed data written on worker  31067 
+Results written on worker  31067 
+Deviances written on worker  31067 
+Null deviances written on worker  31067 
+Analyzed data written on worker  31046 
+Results written on worker  31046 
+Deviances written on worker  31046 
+Null deviances written on worker  31046 
+Analyzed data written on worker  31039 
+Results written on worker  31039 
+Deviances written on worker  31039 
+Null deviances written on worker  31039 
+Analyzed data written on worker  31025 
+Results written on worker  31025 
+Deviances written on worker  31025 
+Null deviances written on worker  31025 
+Analyzed data written on worker  31018 
+Results written on worker  31018 
+Deviances written on worker  31018 
+Null deviances written on worker  31018 
+Analyzed data written on worker  31032 
+Results written on worker  31032 
+Deviances written on worker  31032 
+Null deviances written on worker  31032 
+Analyzed data written on worker  31011 
+Results written on worker  31011 
+Deviances written on worker  31011 
+Null deviances written on worker  31011 
+Analyzed data written on worker  31004 
+Results written on worker  31004 
+Deviances written on worker  31004 
+Null deviances written on worker  31004 
+Analyzed data written on worker  30997 
+Results written on worker  30997 
+Deviances written on worker  30997 
+Null deviances written on worker  30997 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Perform association analysis complete.
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  3.766794e-06 
+Suggestive threshold:  3.766794e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "Pre_FEV1"
+
+$covariates
+[1] "Age,Sex,Asthma_Status,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "PR"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/Pre_FEV1"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH/GALA2_mergedLAT-LATP_noParents_030816_PR"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  PR 
+[1] "Loading data complete"
+Model formula specified:
+[1] "Pre_FEV1 ~ one.roh.snp + Age + Sex + Asthma_Status + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  PR 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+starting worker for localhost:11967 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  33756 
+Data prepared on worker  33763 
+Data prepared on worker  33742 
+Data prepared on worker  33749 
+Data prepared on worker  33728 
+Data prepared on worker  33707 
+Data prepared on worker  33735 
+Data prepared on worker  33714 
+Data prepared on worker  33700 
+Data prepared on worker  33672 
+Data prepared on worker  33686 
+Data prepared on worker  33693 
+Data prepared on worker  33679 
+Data prepared on worker  33658 
+Data prepared on worker  33637 
+Data prepared on worker  33721 
+Data prepared on worker  33665 
+Data prepared on worker  33644 
+Data prepared on worker  33630 
+Data prepared on worker  33651 
+Data prepared on worker  33623 
+Data prepared on worker  33616 
+Linear model fitted on worker  33756 
+Linear model fitted on worker  33763 
+Linear model fitted on worker  33742 
+Analyzed data written on worker  33756 
+Results written on worker  33756 
+Deviances written on worker  33756 
+Null deviances written on worker  33756 
+Linear model fitted on worker  33749 
+Analyzed data written on worker  33763 
+Results written on worker  33763 
+Deviances written on worker  33763 
+Null deviances written on worker  33763 
+Linear model fitted on worker  33735 
+Linear model fitted on worker  33714 
+Linear model fitted on worker  33728 
+Linear model fitted on worker  33707 
+Linear model fitted on worker  33700 
+Linear model fitted on worker  33721 
+Analyzed data written on worker  33742 
+Results written on worker  33742 
+Deviances written on worker  33742 
+Null deviances written on worker  33742 
+Linear model fitted on worker  33672 
+Analyzed data written on worker  33749 
+Results written on worker  33749 
+Deviances written on worker  33749 
+Null deviances written on worker  33749 
+Linear model fitted on worker  33693 
+Analyzed data written on worker  33735 
+Results written on worker  33735 
+Deviances written on worker  33735 
+Null deviances written on worker  33735 
+Linear model fitted on worker  33686 
+Linear model fitted on worker  33679 
+Linear model fitted on worker  33658 
+Linear model fitted on worker  33665 
+Analyzed data written on worker  33728 
+Results written on worker  33728 
+Deviances written on worker  33728 
+Null deviances written on worker  33728 
+Analyzed data written on worker  33714 
+Results written on worker  33714 
+Deviances written on worker  33714 
+Null deviances written on worker  33714 
+Analyzed data written on worker  33707 
+Results written on worker  33707 
+Deviances written on worker  33707 
+Null deviances written on worker  33707 
+Analyzed data written on worker  33700 
+Results written on worker  33700 
+Deviances written on worker  33700 
+Null deviances written on worker  33700 
+Linear model fitted on worker  33644 
+Linear model fitted on worker  33637 
+Linear model fitted on worker  33630 
+Analyzed data written on worker  33721 
+Results written on worker  33721 
+Deviances written on worker  33721 
+Null deviances written on worker  33721 
+Linear model fitted on worker  33651 
+Linear model fitted on worker  33616 
+Analyzed data written on worker  33672 
+Results written on worker  33672 
+Deviances written on worker  33672 
+Null deviances written on worker  33672 
+Analyzed data written on worker  33693 
+Results written on worker  33693 
+Deviances written on worker  33693 
+Null deviances written on worker  33693 
+Linear model fitted on worker  33623 
+Analyzed data written on worker  33686 
+Results written on worker  33686 
+Deviances written on worker  33686 
+Null deviances written on worker  33686 
+Analyzed data written on worker  33679 
+Results written on worker  33679 
+Deviances written on worker  33679 
+Null deviances written on worker  33679 
+Analyzed data written on worker  33658 
+Results written on worker  33658 
+Deviances written on worker  33658 
+Null deviances written on worker  33658 
+Analyzed data written on worker  33665 
+Results written on worker  33665 
+Deviances written on worker  33665 
+Null deviances written on worker  33665 
+Analyzed data written on worker  33644 
+Results written on worker  33644 
+Deviances written on worker  33644 
+Null deviances written on worker  33644 
+Analyzed data written on worker  33637 
+Results written on worker  33637 
+Deviances written on worker  33637 
+Null deviances written on worker  33637 
+Analyzed data written on worker  33630 
+Results written on worker  33630 
+Deviances written on worker  33630 
+Null deviances written on worker  33630 
+Analyzed data written on worker  33651 
+Results written on worker  33651 
+Deviances written on worker  33651 
+Null deviances written on worker  33651 
+Analyzed data written on worker  33616 
+Results written on worker  33616 
+Deviances written on worker  33616 
+Null deviances written on worker  33616 
+Analyzed data written on worker  33623 
+Results written on worker  33623 
+Deviances written on worker  33623 
+Null deviances written on worker  33623 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Type: DONE 
+Perform association analysis complete.
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  3.776714e-06 
+Suggestive threshold:  3.776714e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "Post_FEV1"
+
+$covariates
+[1] "Age,Sex,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "AA"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/Post_FEV1"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH/SAGE_mergedLAT-LATP_030816"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  AA 
+[1] "Loading data complete"
+Model formula specified:
+[1] "Post_FEV1 ~ one.roh.snp + Age + Sex + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  AA 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+starting worker for localhost:11399 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  36741 
+Data prepared on worker  36748 
+Data prepared on worker  36734 
+Data prepared on worker  36727 
+Data prepared on worker  36720 
+Data prepared on worker  36692 
+Data prepared on worker  36699 
+Data prepared on worker  36713 
+Data prepared on worker  36706 
+Data prepared on worker  36685 
+Data prepared on worker  36657 
+Data prepared on worker  36671 
+Data prepared on worker  36678 
+Data prepared on worker  36664 
+Data prepared on worker  36643 
+Data prepared on worker  36650 
+Data prepared on worker  36622 
+Data prepared on worker  36629 
+Data prepared on worker  36615 
+Data prepared on worker  36636 
+Data prepared on worker  36608 
+Data prepared on worker  36601 
+Linear model fitted on worker  36741 
+Linear model fitted on worker  36748 
+Analyzed data written on worker  36741 
+Results written on worker  36741 
+Deviances written on worker  36741 
+Null deviances written on worker  36741 
+Analyzed data written on worker  36748 
+Results written on worker  36748 
+Deviances written on worker  36748 
+Null deviances written on worker  36748 
+Linear model fitted on worker  36727 
+Linear model fitted on worker  36734 
+Linear model fitted on worker  36720 
+Linear model fitted on worker  36713 
+Linear model fitted on worker  36699 
+Analyzed data written on worker  36727 
+Results written on worker  36727 
+Deviances written on worker  36727 
+Null deviances written on worker  36727 
+Linear model fitted on worker  36685 
+Linear model fitted on worker  36692 
+Linear model fitted on worker  36706 
+Analyzed data written on worker  36734 
+Results written on worker  36734 
+Deviances written on worker  36734 
+Null deviances written on worker  36734 
+Analyzed data written on worker  36720 
+Results written on worker  36720 
+Deviances written on worker  36720 
+Null deviances written on worker  36720 
+Analyzed data written on worker  36713 
+Results written on worker  36713 
+Deviances written on worker  36713 
+Null deviances written on worker  36713 
+Analyzed data written on worker  36699 
+Results written on worker  36699 
+Deviances written on worker  36699 
+Null deviances written on worker  36699 
+Analyzed data written on worker  36685 
+Results written on worker  36685 
+Deviances written on worker  36685 
+Null deviances written on worker  36685 
+Linear model fitted on worker  36657 
+Analyzed data written on worker  36692 
+Results written on worker  36692 
+Deviances written on worker  36692 
+Null deviances written on worker  36692 
+Analyzed data written on worker  36706 
+Results written on worker  36706 
+Deviances written on worker  36706 
+Null deviances written on worker  36706 
+Linear model fitted on worker  36678 
+Linear model fitted on worker  36671 
+Linear model fitted on worker  36650 
+Linear model fitted on worker  36664 
+Linear model fitted on worker  36643 
+Analyzed data written on worker  36657 
+Results written on worker  36657 
+Deviances written on worker  36657 
+Null deviances written on worker  36657 
+Linear model fitted on worker  36622 
+Linear model fitted on worker  36629 
+Linear model fitted on worker  36615 
+Analyzed data written on worker  36678 
+Results written on worker  36678 
+Deviances written on worker  36678 
+Null deviances written on worker  36678 
+Analyzed data written on worker  36671 
+Results written on worker  36671 
+Deviances written on worker  36671 
+Null deviances written on worker  36671 
+Linear model fitted on worker  36636 
+Analyzed data written on worker  36650 
+Results written on worker  36650 
+Deviances written on worker  36650 
+Null deviances written on worker  36650 
+Analyzed data written on worker  36664 
+Results written on worker  36664 
+Deviances written on worker  36664 
+Null deviances written on worker  36664 
+Linear model fitted on worker  36608 
+Analyzed data written on worker  36643 
+Results written on worker  36643 
+Deviances written on worker  36643 
+Null deviances written on worker  36643 
+Analyzed data written on worker  36622 
+Results written on worker  36622 
+Deviances written on worker  36622 
+Null deviances written on worker  36622 
+Analyzed data written on worker  36629 
+Results written on worker  36629 
+Deviances written on worker  36629 
+Null deviances written on worker  36629 
+Analyzed data written on worker  36615 
+Results written on worker  36615 
+Deviances written on worker  36615 
+Null deviances written on worker  36615 
+Linear model fitted on worker  36601 
+Analyzed data written on worker  36636 
+Results written on worker  36636 
+Deviances written on worker  36636 
+Null deviances written on worker  36636 
+Analyzed data written on worker  36608 
+Results written on worker  36608 
+Deviances written on worker  36608 
+Null deviances written on worker  36608 
+Analyzed data written on worker  36601 
+Results written on worker  36601 
+Deviances written on worker  36601 
+Null deviances written on worker  36601 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Type: DONE 
+Perform association analysis complete.
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  3.680816e-06 
+Suggestive threshold:  3.680816e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "Post_FEV1"
+
+$covariates
+[1] "Age,Sex,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "MX"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/Post_FEV1"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH/GALA2_mergedLAT-LATP_noParents_030816_MX"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  MX 
+[1] "Loading data complete"
+Model formula specified:
+[1] "Post_FEV1 ~ one.roh.snp + Age + Sex + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  MX 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+starting worker for localhost:11661 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  39342 
+Data prepared on worker  39349 
+Data prepared on worker  39328 
+Data prepared on worker  39335 
+Data prepared on worker  39300 
+Data prepared on worker  39321 
+Data prepared on worker  39286 
+Data prepared on worker  39293 
+Data prepared on worker  39314 
+Data prepared on worker  39307 
+Data prepared on worker  39258 
+Data prepared on worker  39272 
+Data prepared on worker  39251 
+Data prepared on worker  39244 
+Data prepared on worker  39279 
+Data prepared on worker  39265 
+Data prepared on worker  39223 
+Data prepared on worker  39230 
+Data prepared on worker  39216 
+Data prepared on worker  39237 
+Data prepared on worker  39202 
+Data prepared on worker  39209 
+Linear model fitted on worker  39342 
+Linear model fitted on worker  39349 
+Analyzed data written on worker  39342 
+Results written on worker  39342 
+Deviances written on worker  39342 
+Null deviances written on worker  39342 
+Analyzed data written on worker  39349 
+Results written on worker  39349 
+Deviances written on worker  39349 
+Null deviances written on worker  39349 
+Linear model fitted on worker  39328 
+Linear model fitted on worker  39335 
+Linear model fitted on worker  39314 
+Linear model fitted on worker  39321 
+Linear model fitted on worker  39300 
+Linear model fitted on worker  39293 
+Linear model fitted on worker  39286 
+Linear model fitted on worker  39307 
+Analyzed data written on worker  39328 
+Results written on worker  39328 
+Deviances written on worker  39328 
+Null deviances written on worker  39328 
+Analyzed data written on worker  39335 
+Results written on worker  39335 
+Deviances written on worker  39335 
+Null deviances written on worker  39335 
+Analyzed data written on worker  39321 
+Results written on worker  39321 
+Deviances written on worker  39321 
+Null deviances written on worker  39321 
+Linear model fitted on worker  39258 
+Analyzed data written on worker  39314 
+Results written on worker  39314 
+Deviances written on worker  39314 
+Null deviances written on worker  39314 
+Analyzed data written on worker  39300 
+Results written on worker  39300 
+Deviances written on worker  39300 
+Null deviances written on worker  39300 
+Analyzed data written on worker  39293 
+Results written on worker  39293 
+Deviances written on worker  39293 
+Null deviances written on worker  39293 
+Linear model fitted on worker  39279 
+Analyzed data written on worker  39307 
+Results written on worker  39307 
+Deviances written on worker  39307 
+Null deviances written on worker  39307 
+Analyzed data written on worker  39286 
+Results written on worker  39286 
+Deviances written on worker  39286 
+Null deviances written on worker  39286 
+Linear model fitted on worker  39272 
+Linear model fitted on worker  39265 
+Linear model fitted on worker  39251 
+Linear model fitted on worker  39244 
+Analyzed data written on worker  39258 
+Results written on worker  39258 
+Deviances written on worker  39258 
+Null deviances written on worker  39258 
+Linear model fitted on worker  39223 
+Linear model fitted on worker  39230 
+Analyzed data written on worker  39279 
+Results written on worker  39279 
+Deviances written on worker  39279 
+Null deviances written on worker  39279 
+Linear model fitted on worker  39216 
+Analyzed data written on worker  39272 
+Results written on worker  39272 
+Deviances written on worker  39272 
+Null deviances written on worker  39272 
+Linear model fitted on worker  39237 
+Analyzed data written on worker  39265 
+Results written on worker  39265 
+Deviances written on worker  39265 
+Null deviances written on worker  39265 
+Analyzed data written on worker  39251 
+Results written on worker  39251 
+Deviances written on worker  39251 
+Null deviances written on worker  39251 
+Analyzed data written on worker  39244 
+Results written on worker  39244 
+Deviances written on worker  39244 
+Null deviances written on worker  39244 
+Linear model fitted on worker  39202 
+Linear model fitted on worker  39209 
+Analyzed data written on worker  39230 
+Results written on worker  39230 
+Deviances written on worker  39230 
+Null deviances written on worker  39230 
+Analyzed data written on worker  39223 
+Results written on worker  39223 
+Deviances written on worker  39223 
+Null deviances written on worker  39223 
+Analyzed data written on worker  39216 
+Results written on worker  39216 
+Deviances written on worker  39216 
+Null deviances written on worker  39216 
+Analyzed data written on worker  39237 
+Results written on worker  39237 
+Deviances written on worker  39237 
+Null deviances written on worker  39237 
+Analyzed data written on worker  39202 
+Results written on worker  39202 
+Deviances written on worker  39202 
+Null deviances written on worker  39202 
+Analyzed data written on worker  39209 
+Results written on worker  39209 
+Deviances written on worker  39209 
+Null deviances written on worker  39209 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Perform association analysis complete.
+Concatenate Results complete.
+Significance threshold:  3.667549e-06 
+Suggestive threshold:  3.667549e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "Post_FEV1"
+
+$covariates
+[1] "Age,Sex,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "PR"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/Post_FEV1"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH/GALA2_mergedLAT-LATP_noParents_030816_PR"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  PR 
+[1] "Loading data complete"
+Model formula specified:
+[1] "Post_FEV1 ~ one.roh.snp + Age + Sex + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  PR 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+starting worker for localhost:11880 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  41956 
+Data prepared on worker  41949 
+Data prepared on worker  41935 
+Data prepared on worker  41942 
+Data prepared on worker  41921 
+Data prepared on worker  41907 
+Data prepared on worker  41900 
+Data prepared on worker  41893 
+Data prepared on worker  41914 
+Data prepared on worker  41865 
+Data prepared on worker  41886 
+Data prepared on worker  41872 
+Data prepared on worker  41879 
+Data prepared on worker  41858 
+Data prepared on worker  41851 
+Data prepared on worker  41928 
+Data prepared on worker  41830 
+Data prepared on worker  41837 
+Data prepared on worker  41823 
+Data prepared on worker  41844 
+Data prepared on worker  41809 
+Data prepared on worker  41816 
+Linear model fitted on worker  41949 
+Linear model fitted on worker  41956 
+Analyzed data written on worker  41949 
+Results written on worker  41949 
+Deviances written on worker  41949 
+Null deviances written on worker  41949 
+Linear model fitted on worker  41935 
+Analyzed data written on worker  41956 
+Results written on worker  41956 
+Deviances written on worker  41956 
+Null deviances written on worker  41956 
+Linear model fitted on worker  41942 
+Linear model fitted on worker  41921 
+Linear model fitted on worker  41928 
+Linear model fitted on worker  41907 
+Linear model fitted on worker  41900 
+Linear model fitted on worker  41893 
+Linear model fitted on worker  41914 
+Analyzed data written on worker  41935 
+Results written on worker  41935 
+Deviances written on worker  41935 
+Null deviances written on worker  41935 
+Linear model fitted on worker  41865 
+Analyzed data written on worker  41942 
+Results written on worker  41942 
+Deviances written on worker  41942 
+Null deviances written on worker  41942 
+Linear model fitted on worker  41886 
+Analyzed data written on worker  41921 
+Results written on worker  41921 
+Deviances written on worker  41921 
+Null deviances written on worker  41921 
+Linear model fitted on worker  41879 
+Linear model fitted on worker  41872 
+Linear model fitted on worker  41858 
+Analyzed data written on worker  41907 
+Results written on worker  41907 
+Deviances written on worker  41907 
+Null deviances written on worker  41907 
+Linear model fitted on worker  41851 
+Analyzed data written on worker  41900 
+Results written on worker  41900 
+Deviances written on worker  41900 
+Null deviances written on worker  41900 
+Analyzed data written on worker  41893 
+Results written on worker  41893 
+Deviances written on worker  41893 
+Null deviances written on worker  41893 
+Analyzed data written on worker  41928 
+Results written on worker  41928 
+Deviances written on worker  41928 
+Null deviances written on worker  41928 
+Analyzed data written on worker  41914 
+Results written on worker  41914 
+Deviances written on worker  41914 
+Null deviances written on worker  41914 
+Linear model fitted on worker  41837 
+Linear model fitted on worker  41830 
+Linear model fitted on worker  41823 
+Linear model fitted on worker  41844 
+Analyzed data written on worker  41865 
+Results written on worker  41865 
+Deviances written on worker  41865 
+Null deviances written on worker  41865 
+Linear model fitted on worker  41809 
+Analyzed data written on worker  41879 
+Results written on worker  41879 
+Deviances written on worker  41879 
+Null deviances written on worker  41879 
+Analyzed data written on worker  41872 
+Results written on worker  41872 
+Deviances written on worker  41872 
+Null deviances written on worker  41872 
+Linear model fitted on worker  41816 
+Analyzed data written on worker  41886 
+Results written on worker  41886 
+Deviances written on worker  41886 
+Null deviances written on worker  41886 
+Analyzed data written on worker  41858 
+Results written on worker  41858 
+Deviances written on worker  41858 
+Null deviances written on worker  41858 
+Analyzed data written on worker  41851 
+Results written on worker  41851 
+Deviances written on worker  41851 
+Null deviances written on worker  41851 
+Analyzed data written on worker  41837 
+Results written on worker  41837 
+Deviances written on worker  41837 
+Null deviances written on worker  41837 
+Analyzed data written on worker  41830 
+Results written on worker  41830 
+Deviances written on worker  41830 
+Null deviances written on worker  41830 
+Analyzed data written on worker  41844 
+Results written on worker  41844 
+Deviances written on worker  41844 
+Null deviances written on worker  41844 
+Analyzed data written on worker  41823 
+Results written on worker  41823 
+Deviances written on worker  41823 
+Null deviances written on worker  41823 
+Analyzed data written on worker  41809 
+Results written on worker  41809 
+Deviances written on worker  41809 
+Null deviances written on worker  41809 
+Analyzed data written on worker  41816 
+Results written on worker  41816 
+Deviances written on worker  41816 
+Null deviances written on worker  41816 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Type: DONE 
+Perform association analysis complete.
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  3.771193e-06 
+Suggestive threshold:  3.771193e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "Asthma_Status"
+
+$covariates
+[1] "Age,Sex,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "AA"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/Asthma_Status"
+
+$GLM_type
+[1] "binomial"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH/SAGE_mergedLAT-LATP_030816"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  AA 
+[1] "Loading data complete"
+Model formula specified:
+[1] "Asthma_Status ~ one.roh.snp + Age + Sex + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  AA 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+starting worker for localhost:11834 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  44575 
+Data prepared on worker  44568 
+Data prepared on worker  44547 
+Data prepared on worker  44554 
+Data prepared on worker  44561 
+Data prepared on worker  44526 
+Data prepared on worker  44540 
+Data prepared on worker  44519 
+Data prepared on worker  44512 
+Data prepared on worker  44533 
+Data prepared on worker  44484 
+Data prepared on worker  44505 
+Data prepared on worker  44498 
+Data prepared on worker  44477 
+Data prepared on worker  44491 
+Data prepared on worker  44470 
+Data prepared on worker  44456 
+Data prepared on worker  44449 
+Data prepared on worker  44442 
+Data prepared on worker  44463 
+Data prepared on worker  44428 
+Data prepared on worker  44435 
+Linear model fitted on worker  44568 
+Linear model fitted on worker  44575 
+Analyzed data written on worker  44568 
+Results written on worker  44568 
+Deviances written on worker  44568 
+Null deviances written on worker  44568 
+Analyzed data written on worker  44575 
+Results written on worker  44575 
+Deviances written on worker  44575 
+Null deviances written on worker  44575 
+Linear model fitted on worker  44554 
+Linear model fitted on worker  44561 
+Linear model fitted on worker  44547 
+Linear model fitted on worker  44526 
+Linear model fitted on worker  44519 
+Linear model fitted on worker  44540 
+Analyzed data written on worker  44554 
+Results written on worker  44554 
+Deviances written on worker  44554 
+Null deviances written on worker  44554 
+Linear model fitted on worker  44533 
+Linear model fitted on worker  44512 
+Analyzed data written on worker  44561 
+Results written on worker  44561 
+Deviances written on worker  44561 
+Null deviances written on worker  44561 
+Analyzed data written on worker  44547 
+Results written on worker  44547 
+Deviances written on worker  44547 
+Null deviances written on worker  44547 
+Analyzed data written on worker  44540 
+Results written on worker  44540 
+Deviances written on worker  44540 
+Null deviances written on worker  44540 
+Analyzed data written on worker  44526 
+Results written on worker  44526 
+Deviances written on worker  44526 
+Null deviances written on worker  44526 
+Analyzed data written on worker  44519 
+Results written on worker  44519 
+Deviances written on worker  44519 
+Null deviances written on worker  44519 
+Linear model fitted on worker  44484 
+Analyzed data written on worker  44533 
+Results written on worker  44533 
+Deviances written on worker  44533 
+Null deviances written on worker  44533 
+Analyzed data written on worker  44512 
+Results written on worker  44512 
+Deviances written on worker  44512 
+Null deviances written on worker  44512 
+Linear model fitted on worker  44505 
+Linear model fitted on worker  44470 
+Linear model fitted on worker  44491 
+Linear model fitted on worker  44498 
+Linear model fitted on worker  44477 
+Linear model fitted on worker  44456 
+Linear model fitted on worker  44449 
+Analyzed data written on worker  44484 
+Results written on worker  44484 
+Deviances written on worker  44484 
+Null deviances written on worker  44484 
+Analyzed data written on worker  44505 
+Results written on worker  44505 
+Deviances written on worker  44505 
+Null deviances written on worker  44505 
+Linear model fitted on worker  44463 
+Linear model fitted on worker  44442 
+Analyzed data written on worker  44470 
+Results written on worker  44470 
+Deviances written on worker  44470 
+Null deviances written on worker  44470 
+Analyzed data written on worker  44491 
+Results written on worker  44491 
+Deviances written on worker  44491 
+Null deviances written on worker  44491 
+Analyzed data written on worker  44498 
+Results written on worker  44498 
+Deviances written on worker  44498 
+Null deviances written on worker  44498 
+Analyzed data written on worker  44477 
+Results written on worker  44477 
+Deviances written on worker  44477 
+Null deviances written on worker  44477 
+Linear model fitted on worker  44428 
+Linear model fitted on worker  44435 
+Analyzed data written on worker  44456 
+Results written on worker  44456 
+Deviances written on worker  44456 
+Null deviances written on worker  44456 
+Analyzed data written on worker  44449 
+Results written on worker  44449 
+Deviances written on worker  44449 
+Null deviances written on worker  44449 
+Analyzed data written on worker  44463 
+Results written on worker  44463 
+Deviances written on worker  44463 
+Null deviances written on worker  44463 
+Analyzed data written on worker  44442 
+Results written on worker  44442 
+Deviances written on worker  44442 
+Null deviances written on worker  44442 
+Analyzed data written on worker  44435 
+Results written on worker  44435 
+Deviances written on worker  44435 
+Null deviances written on worker  44435 
+Analyzed data written on worker  44428 
+Results written on worker  44428 
+Deviances written on worker  44428 
+Null deviances written on worker  44428 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Perform association analysis complete.
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  3.568377e-06 
+Suggestive threshold:  3.568377e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "Asthma_Status"
+
+$covariates
+[1] "Age,Sex,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "MX"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/Asthma_Status"
+
+$GLM_type
+[1] "binomial"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH/GALA2_mergedLAT-LATP_noParents_030816_MX"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  MX 
+[1] "Loading data complete"
+Model formula specified:
+[1] "Asthma_Status ~ one.roh.snp + Age + Sex + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  MX 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+starting worker for localhost:11266 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  47224 
+Data prepared on worker  47214 
+Data prepared on worker  47195 
+Data prepared on worker  47181 
+Data prepared on worker  47202 
+Data prepared on worker  47167 
+Data prepared on worker  47188 
+Data prepared on worker  47160 
+Data prepared on worker  47153 
+Data prepared on worker  47174 
+Data prepared on worker  47125 
+Data prepared on worker  47146 
+Data prepared on worker  47139 
+Data prepared on worker  47118 
+Data prepared on worker  47132 
+Data prepared on worker  47111 
+Data prepared on worker  47090 
+Data prepared on worker  47097 
+Data prepared on worker  47104 
+Data prepared on worker  47076 
+Data prepared on worker  47069 
+Data prepared on worker  47083 
+Linear model fitted on worker  47214 
+Linear model fitted on worker  47224 
+Analyzed data written on worker  47214 
+Results written on worker  47214 
+Deviances written on worker  47214 
+Null deviances written on worker  47214 
+Analyzed data written on worker  47224 
+Results written on worker  47224 
+Deviances written on worker  47224 
+Null deviances written on worker  47224 
+Linear model fitted on worker  47195 
+Linear model fitted on worker  47202 
+Linear model fitted on worker  47188 
+Linear model fitted on worker  47181 
+Linear model fitted on worker  47167 
+Linear model fitted on worker  47160 
+Linear model fitted on worker  47153 
+Analyzed data written on worker  47195 
+Results written on worker  47195 
+Deviances written on worker  47195 
+Null deviances written on worker  47195 
+Linear model fitted on worker  47174 
+Analyzed data written on worker  47202 
+Results written on worker  47202 
+Deviances written on worker  47202 
+Null deviances written on worker  47202 
+Analyzed data written on worker  47188 
+Results written on worker  47188 
+Deviances written on worker  47188 
+Null deviances written on worker  47188 
+Analyzed data written on worker  47181 
+Results written on worker  47181 
+Deviances written on worker  47181 
+Null deviances written on worker  47181 
+Analyzed data written on worker  47167 
+Results written on worker  47167 
+Deviances written on worker  47167 
+Null deviances written on worker  47167 
+Linear model fitted on worker  47125 
+Linear model fitted on worker  47146 
+Analyzed data written on worker  47160 
+Results written on worker  47160 
+Deviances written on worker  47160 
+Null deviances written on worker  47160 
+Linear model fitted on worker  47132 
+Analyzed data written on worker  47153 
+Results written on worker  47153 
+Deviances written on worker  47153 
+Null deviances written on worker  47153 
+Linear model fitted on worker  47139 
+Analyzed data written on worker  47174 
+Results written on worker  47174 
+Deviances written on worker  47174 
+Null deviances written on worker  47174 
+Linear model fitted on worker  47118 
+Linear model fitted on worker  47111 
+Linear model fitted on worker  47097 
+Linear model fitted on worker  47090 
+Analyzed data written on worker  47125 
+Results written on worker  47125 
+Deviances written on worker  47125 
+Null deviances written on worker  47125 
+Linear model fitted on worker  47104 
+Analyzed data written on worker  47146 
+Results written on worker  47146 
+Deviances written on worker  47146 
+Null deviances written on worker  47146 
+Analyzed data written on worker  47132 
+Results written on worker  47132 
+Deviances written on worker  47132 
+Null deviances written on worker  47132 
+Analyzed data written on worker  47139 
+Results written on worker  47139 
+Deviances written on worker  47139 
+Null deviances written on worker  47139 
+Analyzed data written on worker  47118 
+Results written on worker  47118 
+Deviances written on worker  47118 
+Null deviances written on worker  47118 
+Linear model fitted on worker  47083 
+Linear model fitted on worker  47076 
+Analyzed data written on worker  47111 
+Results written on worker  47111 
+Deviances written on worker  47111 
+Null deviances written on worker  47111 
+Linear model fitted on worker  47069 
+Analyzed data written on worker  47097 
+Results written on worker  47097 
+Deviances written on worker  47097 
+Null deviances written on worker  47097 
+Analyzed data written on worker  47090 
+Results written on worker  47090 
+Deviances written on worker  47090 
+Null deviances written on worker  47090 
+Analyzed data written on worker  47104 
+Results written on worker  47104 
+Deviances written on worker  47104 
+Null deviances written on worker  47104 
+Analyzed data written on worker  47083 
+Results written on worker  47083 
+Deviances written on worker  47083 
+Null deviances written on worker  47083 
+Analyzed data written on worker  47076 
+Results written on worker  47076 
+Deviances written on worker  47076 
+Null deviances written on worker  47076 
+Analyzed data written on worker  47069 
+Results written on worker  47069 
+Deviances written on worker  47069 
+Null deviances written on worker  47069 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Perform association analysis complete.
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  3.429183e-06 
+Suggestive threshold:  3.429183e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "Asthma_Status"
+
+$covariates
+[1] "Age,Sex,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "PR"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/Asthma_Status"
+
+$GLM_type
+[1] "binomial"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH/GALA2_mergedLAT-LATP_noParents_030816_PR"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  PR 
+[1] "Loading data complete"
+Model formula specified:
+[1] "Asthma_Status ~ one.roh.snp + Age + Sex + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  PR 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+starting worker for localhost:11972 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  50124 
+Data prepared on worker  50131 
+Data prepared on worker  50110 
+Data prepared on worker  50117 
+Data prepared on worker  50096 
+Data prepared on worker  50082 
+Data prepared on worker  50075 
+Data prepared on worker  50103 
+Data prepared on worker  50068 
+Data prepared on worker  50089 
+Data prepared on worker  50040 
+Data prepared on worker  50061 
+Data prepared on worker  50054 
+Data prepared on worker  50033 
+Data prepared on worker  50047 
+Data prepared on worker  50026 
+Data prepared on worker  50005 
+Data prepared on worker  50012 
+Data prepared on worker  50019 
+Data prepared on worker  49991 
+Data prepared on worker  49984 
+Data prepared on worker  49998 
+Linear model fitted on worker  50124 
+Linear model fitted on worker  50131 
+Analyzed data written on worker  50124 
+Results written on worker  50124 
+Deviances written on worker  50124 
+Null deviances written on worker  50124 
+Analyzed data written on worker  50131 
+Results written on worker  50131 
+Deviances written on worker  50131 
+Null deviances written on worker  50131 
+Linear model fitted on worker  50110 
+Linear model fitted on worker  50117 
+Linear model fitted on worker  50103 
+Linear model fitted on worker  50096 
+Linear model fitted on worker  50075 
+Linear model fitted on worker  50082 
+Linear model fitted on worker  50089 
+Analyzed data written on worker  50110 
+Results written on worker  50110 
+Deviances written on worker  50110 
+Null deviances written on worker  50110 
+Linear model fitted on worker  50068 
+Analyzed data written on worker  50117 
+Results written on worker  50117 
+Deviances written on worker  50117 
+Null deviances written on worker  50117 
+Analyzed data written on worker  50103 
+Results written on worker  50103 
+Deviances written on worker  50103 
+Null deviances written on worker  50103 
+Linear model fitted on worker  50040 
+Analyzed data written on worker  50096 
+Results written on worker  50096 
+Deviances written on worker  50096 
+Null deviances written on worker  50096 
+Linear model fitted on worker  50061 
+Analyzed data written on worker  50082 
+Results written on worker  50082 
+Deviances written on worker  50082 
+Null deviances written on worker  50082 
+Analyzed data written on worker  50075 
+Results written on worker  50075 
+Deviances written on worker  50075 
+Null deviances written on worker  50075 
+Analyzed data written on worker  50068 
+Results written on worker  50068 
+Deviances written on worker  50068 
+Null deviances written on worker  50068 
+Linear model fitted on worker  50054 
+Linear model fitted on worker  50047 
+Analyzed data written on worker  50089 
+Results written on worker  50089 
+Deviances written on worker  50089 
+Null deviances written on worker  50089 
+Linear model fitted on worker  50033 
+Linear model fitted on worker  50026 
+Linear model fitted on worker  50012 
+Linear model fitted on worker  50005 
+Analyzed data written on worker  50040 
+Results written on worker  50040 
+Deviances written on worker  50040 
+Null deviances written on worker  50040 
+Linear model fitted on worker  50019 
+Analyzed data written on worker  50061 
+Results written on worker  50061 
+Deviances written on worker  50061 
+Null deviances written on worker  50061 
+Linear model fitted on worker  49998 
+Analyzed data written on worker  50047 
+Results written on worker  50047 
+Deviances written on worker  50047 
+Null deviances written on worker  50047 
+Analyzed data written on worker  50054 
+Results written on worker  50054 
+Deviances written on worker  50054 
+Null deviances written on worker  50054 
+Linear model fitted on worker  49991 
+Analyzed data written on worker  50033 
+Results written on worker  50033 
+Deviances written on worker  50033 
+Null deviances written on worker  50033 
+Linear model fitted on worker  49984 
+Analyzed data written on worker  50026 
+Results written on worker  50026 
+Deviances written on worker  50026 
+Null deviances written on worker  50026 
+Analyzed data written on worker  50005 
+Results written on worker  50005 
+Deviances written on worker  50005 
+Null deviances written on worker  50005 
+Analyzed data written on worker  50012 
+Results written on worker  50012 
+Deviances written on worker  50012 
+Null deviances written on worker  50012 
+Analyzed data written on worker  49998 
+Results written on worker  49998 
+Deviances written on worker  49998 
+Null deviances written on worker  49998 
+Analyzed data written on worker  50019 
+Results written on worker  50019 
+Deviances written on worker  50019 
+Null deviances written on worker  50019 
+Analyzed data written on worker  49991 
+Results written on worker  49991 
+Deviances written on worker  49991 
+Null deviances written on worker  49991 
+Analyzed data written on worker  49984 
+Results written on worker  49984 
+Deviances written on worker  49984 
+Null deviances written on worker  49984 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Type: DONE 
+Perform association analysis complete.
+Type: DONE 
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  3.893633e-06 
+Suggestive threshold:  3.893633e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "BDR"
+
+$covariates
+[1] "Age,Sex,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "AA"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/BDR"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH/SAGE_mergedLAT-LATP_030816"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  AA 
+[1] "Loading data complete"
+Model formula specified:
+[1] "BDR ~ one.roh.snp + Age + Sex + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  AA 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+starting worker for localhost:11057 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  52786 
+Data prepared on worker  52793 
+Data prepared on worker  52772 
+Data prepared on worker  52779 
+Data prepared on worker  52765 
+Data prepared on worker  52737 
+Data prepared on worker  52758 
+Data prepared on worker  52744 
+Data prepared on worker  52730 
+Data prepared on worker  52751 
+Data prepared on worker  52709 
+Data prepared on worker  52716 
+Data prepared on worker  52723 
+Data prepared on worker  52695 
+Data prepared on worker  52688 
+Data prepared on worker  52702 
+Data prepared on worker  52667 
+Data prepared on worker  52674 
+Data prepared on worker  52660 
+Data prepared on worker  52681 
+Data prepared on worker  52653 
+Data prepared on worker  52646 
+Linear model fitted on worker  52786 
+Linear model fitted on worker  52793 
+Analyzed data written on worker  52786 
+Results written on worker  52786 
+Deviances written on worker  52786 
+Null deviances written on worker  52786 
+Analyzed data written on worker  52793 
+Results written on worker  52793 
+Deviances written on worker  52793 
+Null deviances written on worker  52793 
+Linear model fitted on worker  52772 
+Linear model fitted on worker  52779 
+Linear model fitted on worker  52765 
+Linear model fitted on worker  52737 
+Linear model fitted on worker  52758 
+Analyzed data written on worker  52772 
+Results written on worker  52772 
+Deviances written on worker  52772 
+Null deviances written on worker  52772 
+Linear model fitted on worker  52751 
+Linear model fitted on worker  52744 
+Linear model fitted on worker  52730 
+Analyzed data written on worker  52779 
+Results written on worker  52779 
+Deviances written on worker  52779 
+Null deviances written on worker  52779 
+Analyzed data written on worker  52765 
+Results written on worker  52765 
+Deviances written on worker  52765 
+Null deviances written on worker  52765 
+Analyzed data written on worker  52758 
+Results written on worker  52758 
+Deviances written on worker  52758 
+Null deviances written on worker  52758 
+Analyzed data written on worker  52737 
+Results written on worker  52737 
+Deviances written on worker  52737 
+Null deviances written on worker  52737 
+Analyzed data written on worker  52744 
+Results written on worker  52744 
+Deviances written on worker  52744 
+Null deviances written on worker  52744 
+Linear model fitted on worker  52702 
+Analyzed data written on worker  52751 
+Results written on worker  52751 
+Deviances written on worker  52751 
+Null deviances written on worker  52751 
+Analyzed data written on worker  52730 
+Results written on worker  52730 
+Deviances written on worker  52730 
+Null deviances written on worker  52730 
+Linear model fitted on worker  52723 
+Linear model fitted on worker  52716 
+Linear model fitted on worker  52709 
+Linear model fitted on worker  52695 
+Linear model fitted on worker  52688 
+Linear model fitted on worker  52667 
+Linear model fitted on worker  52674 
+Analyzed data written on worker  52702 
+Results written on worker  52702 
+Deviances written on worker  52702 
+Null deviances written on worker  52702 
+Analyzed data written on worker  52716 
+Results written on worker  52716 
+Deviances written on worker  52716 
+Null deviances written on worker  52716 
+Analyzed data written on worker  52723 
+Results written on worker  52723 
+Deviances written on worker  52723 
+Null deviances written on worker  52723 
+Linear model fitted on worker  52681 
+Linear model fitted on worker  52660 
+Analyzed data written on worker  52709 
+Results written on worker  52709 
+Deviances written on worker  52709 
+Null deviances written on worker  52709 
+Analyzed data written on worker  52695 
+Results written on worker  52695 
+Deviances written on worker  52695 
+Null deviances written on worker  52695 
+Analyzed data written on worker  52688 
+Results written on worker  52688 
+Deviances written on worker  52688 
+Null deviances written on worker  52688 
+Linear model fitted on worker  52653 
+Analyzed data written on worker  52667 
+Results written on worker  52667 
+Deviances written on worker  52667 
+Null deviances written on worker  52667 
+Linear model fitted on worker  52646 
+Analyzed data written on worker  52674 
+Results written on worker  52674 
+Deviances written on worker  52674 
+Null deviances written on worker  52674 
+Analyzed data written on worker  52660 
+Results written on worker  52660 
+Deviances written on worker  52660 
+Null deviances written on worker  52660 
+Analyzed data written on worker  52681 
+Results written on worker  52681 
+Deviances written on worker  52681 
+Null deviances written on worker  52681 
+Analyzed data written on worker  52653 
+Results written on worker  52653 
+Deviances written on worker  52653 
+Null deviances written on worker  52653 
+Analyzed data written on worker  52646 
+Results written on worker  52646 
+Deviances written on worker  52646 
+Null deviances written on worker  52646 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Type: DONE 
+Perform association analysis complete.
+Type: DONE 
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  3.646871e-06 
+Suggestive threshold:  3.646871e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "BDR"
+
+$covariates
+[1] "Age,Sex,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "MX"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/BDR"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH/GALA2_mergedLAT-LATP_noParents_030816_MX"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  MX 
+[1] "Loading data complete"
+Model formula specified:
+[1] "BDR ~ one.roh.snp + Age + Sex + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  MX 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+starting worker for localhost:11731 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  55274 
+Data prepared on worker  55281 
+Data prepared on worker  55267 
+Data prepared on worker  55260 
+Data prepared on worker  55253 
+Data prepared on worker  55246 
+Data prepared on worker  55239 
+Data prepared on worker  55225 
+Data prepared on worker  55218 
+Data prepared on worker  55190 
+Data prepared on worker  55211 
+Data prepared on worker  55183 
+Data prepared on worker  55197 
+Data prepared on worker  55204 
+Data prepared on worker  55175 
+Data prepared on worker  55154 
+Data prepared on worker  55232 
+Data prepared on worker  55161 
+Data prepared on worker  55147 
+Data prepared on worker  55130 
+Data prepared on worker  55168 
+Data prepared on worker  55140 
+Linear model fitted on worker  55274 
+Linear model fitted on worker  55281 
+Analyzed data written on worker  55274 
+Results written on worker  55274 
+Deviances written on worker  55274 
+Null deviances written on worker  55274 
+Analyzed data written on worker  55281 
+Results written on worker  55281 
+Deviances written on worker  55281 
+Null deviances written on worker  55281 
+Linear model fitted on worker  55260 
+Linear model fitted on worker  55267 
+Linear model fitted on worker  55253 
+Linear model fitted on worker  55246 
+Linear model fitted on worker  55225 
+Linear model fitted on worker  55232 
+Linear model fitted on worker  55218 
+Analyzed data written on worker  55260 
+Results written on worker  55260 
+Deviances written on worker  55260 
+Null deviances written on worker  55260 
+Linear model fitted on worker  55239 
+Analyzed data written on worker  55267 
+Results written on worker  55267 
+Deviances written on worker  55267 
+Null deviances written on worker  55267 
+Analyzed data written on worker  55253 
+Results written on worker  55253 
+Deviances written on worker  55253 
+Null deviances written on worker  55253 
+Analyzed data written on worker  55246 
+Results written on worker  55246 
+Deviances written on worker  55246 
+Null deviances written on worker  55246 
+Linear model fitted on worker  55190 
+Analyzed data written on worker  55225 
+Results written on worker  55225 
+Deviances written on worker  55225 
+Null deviances written on worker  55225 
+Linear model fitted on worker  55211 
+Analyzed data written on worker  55218 
+Results written on worker  55218 
+Deviances written on worker  55218 
+Null deviances written on worker  55218 
+Analyzed data written on worker  55239 
+Results written on worker  55239 
+Deviances written on worker  55239 
+Null deviances written on worker  55239 
+Analyzed data written on worker  55232 
+Results written on worker  55232 
+Deviances written on worker  55232 
+Null deviances written on worker  55232 
+Linear model fitted on worker  55204 
+Linear model fitted on worker  55197 
+Linear model fitted on worker  55183 
+Linear model fitted on worker  55175 
+Linear model fitted on worker  55154 
+Linear model fitted on worker  55161 
+Analyzed data written on worker  55190 
+Results written on worker  55190 
+Deviances written on worker  55190 
+Null deviances written on worker  55190 
+Linear model fitted on worker  55147 
+Analyzed data written on worker  55211 
+Results written on worker  55211 
+Deviances written on worker  55211 
+Null deviances written on worker  55211 
+Linear model fitted on worker  55168 
+Analyzed data written on worker  55204 
+Results written on worker  55204 
+Deviances written on worker  55204 
+Null deviances written on worker  55204 
+Analyzed data written on worker  55197 
+Results written on worker  55197 
+Deviances written on worker  55197 
+Null deviances written on worker  55197 
+Analyzed data written on worker  55175 
+Results written on worker  55175 
+Deviances written on worker  55175 
+Null deviances written on worker  55175 
+Linear model fitted on worker  55130 
+Analyzed data written on worker  55183 
+Results written on worker  55183 
+Deviances written on worker  55183 
+Null deviances written on worker  55183 
+Linear model fitted on worker  55140 
+Analyzed data written on worker  55154 
+Results written on worker  55154 
+Deviances written on worker  55154 
+Null deviances written on worker  55154 
+Analyzed data written on worker  55161 
+Results written on worker  55161 
+Deviances written on worker  55161 
+Null deviances written on worker  55161 
+Analyzed data written on worker  55147 
+Results written on worker  55147 
+Deviances written on worker  55147 
+Null deviances written on worker  55147 
+Analyzed data written on worker  55168 
+Results written on worker  55168 
+Deviances written on worker  55168 
+Null deviances written on worker  55168 
+Analyzed data written on worker  55130 
+Results written on worker  55130 
+Deviances written on worker  55130 
+Null deviances written on worker  55130 
+Analyzed data written on worker  55140 
+Results written on worker  55140 
+Deviances written on worker  55140 
+Null deviances written on worker  55140 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Type: DONE 
+Perform association analysis complete.
+Type: DONE 
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  3.429383e-06 
+Suggestive threshold:  3.429383e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "BDR"
+
+$covariates
+[1] "Age,Sex,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "PR"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/BDR"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH/GALA2_mergedLAT-LATP_noParents_030816_PR"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  PR 
+[1] "Loading data complete"
+Model formula specified:
+[1] "BDR ~ one.roh.snp + Age + Sex + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  PR 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+starting worker for localhost:11689 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  57895 
+Data prepared on worker  57888 
+Data prepared on worker  57874 
+Data prepared on worker  57881 
+Data prepared on worker  57860 
+Data prepared on worker  57867 
+Data prepared on worker  57832 
+Data prepared on worker  57846 
+Data prepared on worker  57853 
+Data prepared on worker  57839 
+Data prepared on worker  57804 
+Data prepared on worker  57811 
+Data prepared on worker  57825 
+Data prepared on worker  57797 
+Data prepared on worker  57818 
+Data prepared on worker  57790 
+Data prepared on worker  57769 
+Data prepared on worker  57762 
+Data prepared on worker  57776 
+Data prepared on worker  57783 
+Data prepared on worker  57755 
+Data prepared on worker  57748 
+Linear model fitted on worker  57888 
+Linear model fitted on worker  57895 
+Analyzed data written on worker  57888 
+Results written on worker  57888 
+Deviances written on worker  57888 
+Null deviances written on worker  57888 
+Linear model fitted on worker  57874 
+Linear model fitted on worker  57881 
+Analyzed data written on worker  57895 
+Results written on worker  57895 
+Deviances written on worker  57895 
+Null deviances written on worker  57895 
+Linear model fitted on worker  57867 
+Linear model fitted on worker  57860 
+Linear model fitted on worker  57846 
+Linear model fitted on worker  57839 
+Linear model fitted on worker  57832 
+Linear model fitted on worker  57853 
+Analyzed data written on worker  57874 
+Results written on worker  57874 
+Deviances written on worker  57874 
+Null deviances written on worker  57874 
+Analyzed data written on worker  57881 
+Results written on worker  57881 
+Deviances written on worker  57881 
+Null deviances written on worker  57881 
+Analyzed data written on worker  57867 
+Results written on worker  57867 
+Deviances written on worker  57867 
+Null deviances written on worker  57867 
+Linear model fitted on worker  57804 
+Linear model fitted on worker  57825 
+Analyzed data written on worker  57860 
+Results written on worker  57860 
+Deviances written on worker  57860 
+Null deviances written on worker  57860 
+Analyzed data written on worker  57846 
+Results written on worker  57846 
+Deviances written on worker  57846 
+Null deviances written on worker  57846 
+Linear model fitted on worker  57818 
+Linear model fitted on worker  57811 
+Analyzed data written on worker  57839 
+Results written on worker  57839 
+Deviances written on worker  57839 
+Null deviances written on worker  57839 
+Linear model fitted on worker  57797 
+Analyzed data written on worker  57853 
+Results written on worker  57853 
+Deviances written on worker  57853 
+Null deviances written on worker  57853 
+Linear model fitted on worker  57790 
+Analyzed data written on worker  57832 
+Results written on worker  57832 
+Deviances written on worker  57832 
+Null deviances written on worker  57832 
+Linear model fitted on worker  57776 
+Linear model fitted on worker  57769 
+Linear model fitted on worker  57762 
+Analyzed data written on worker  57804 
+Results written on worker  57804 
+Deviances written on worker  57804 
+Null deviances written on worker  57804 
+Linear model fitted on worker  57783 
+Analyzed data written on worker  57825 
+Results written on worker  57825 
+Deviances written on worker  57825 
+Null deviances written on worker  57825 
+Linear model fitted on worker  57755 
+Linear model fitted on worker  57748 
+Analyzed data written on worker  57811 
+Results written on worker  57811 
+Deviances written on worker  57811 
+Null deviances written on worker  57811 
+Analyzed data written on worker  57790 
+Results written on worker  57790 
+Deviances written on worker  57790 
+Null deviances written on worker  57790 
+Analyzed data written on worker  57818 
+Results written on worker  57818 
+Deviances written on worker  57818 
+Null deviances written on worker  57818 
+Analyzed data written on worker  57797 
+Results written on worker  57797 
+Deviances written on worker  57797 
+Null deviances written on worker  57797 
+Analyzed data written on worker  57776 
+Results written on worker  57776 
+Deviances written on worker  57776 
+Null deviances written on worker  57776 
+Analyzed data written on worker  57769 
+Results written on worker  57769 
+Deviances written on worker  57769 
+Null deviances written on worker  57769 
+Analyzed data written on worker  57762 
+Results written on worker  57762 
+Deviances written on worker  57762 
+Null deviances written on worker  57762 
+Analyzed data written on worker  57783 
+Results written on worker  57783 
+Deviances written on worker  57783 
+Null deviances written on worker  57783 
+Analyzed data written on worker  57755 
+Results written on worker  57755 
+Deviances written on worker  57755 
+Null deviances written on worker  57755 
+Analyzed data written on worker  57748 
+Results written on worker  57748 
+Deviances written on worker  57748 
+Null deviances written on worker  57748 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Type: DONE 
+Perform association analysis complete.
+Concatenate Results complete.
+Significance threshold:  3.769209e-06 
+Suggestive threshold:  3.769209e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "FVC"
+
+$covariates
+[1] "Age,Sex,Asthma_Status,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "AA"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/FVC"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH/SAGE_mergedLAT-LATP_030816"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  AA 
+[1] "Loading data complete"
+Model formula specified:
+[1] "FVC ~ one.roh.snp + Age + Sex + Asthma_Status + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  AA 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+starting worker for localhost:11797 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  60610 
+Data prepared on worker  60603 
+Data prepared on worker  60589 
+Data prepared on worker  60575 
+Data prepared on worker  60582 
+Data prepared on worker  60554 
+Data prepared on worker  60596 
+Data prepared on worker  60547 
+Data prepared on worker  60568 
+Data prepared on worker  60518 
+Data prepared on worker  60561 
+Data prepared on worker  60539 
+Data prepared on worker  60511 
+Data prepared on worker  60532 
+Data prepared on worker  60525 
+Data prepared on worker  60504 
+Data prepared on worker  60482 
+Data prepared on worker  60489 
+Data prepared on worker  60475 
+Data prepared on worker  60496 
+Data prepared on worker  60468 
+Data prepared on worker  60461 
+Linear model fitted on worker  60603 
+Linear model fitted on worker  60610 
+Analyzed data written on worker  60603 
+Results written on worker  60603 
+Deviances written on worker  60603 
+Null deviances written on worker  60603 
+Linear model fitted on worker  60589 
+Analyzed data written on worker  60610 
+Results written on worker  60610 
+Deviances written on worker  60610 
+Null deviances written on worker  60610 
+Linear model fitted on worker  60596 
+Linear model fitted on worker  60582 
+Linear model fitted on worker  60575 
+Linear model fitted on worker  60554 
+Linear model fitted on worker  60568 
+Linear model fitted on worker  60547 
+Analyzed data written on worker  60589 
+Results written on worker  60589 
+Deviances written on worker  60589 
+Null deviances written on worker  60589 
+Linear model fitted on worker  60561 
+Analyzed data written on worker  60596 
+Results written on worker  60596 
+Deviances written on worker  60596 
+Null deviances written on worker  60596 
+Analyzed data written on worker  60582 
+Results written on worker  60582 
+Deviances written on worker  60582 
+Null deviances written on worker  60582 
+Linear model fitted on worker  60518 
+Analyzed data written on worker  60575 
+Results written on worker  60575 
+Deviances written on worker  60575 
+Null deviances written on worker  60575 
+Linear model fitted on worker  60539 
+Analyzed data written on worker  60554 
+Results written on worker  60554 
+Deviances written on worker  60554 
+Null deviances written on worker  60554 
+Analyzed data written on worker  60568 
+Results written on worker  60568 
+Deviances written on worker  60568 
+Null deviances written on worker  60568 
+Linear model fitted on worker  60532 
+Analyzed data written on worker  60547 
+Results written on worker  60547 
+Deviances written on worker  60547 
+Null deviances written on worker  60547 
+Analyzed data written on worker  60561 
+Results written on worker  60561 
+Deviances written on worker  60561 
+Null deviances written on worker  60561 
+Linear model fitted on worker  60525 
+Linear model fitted on worker  60504 
+Linear model fitted on worker  60511 
+Linear model fitted on worker  60482 
+Linear model fitted on worker  60475 
+Linear model fitted on worker  60489 
+Analyzed data written on worker  60518 
+Results written on worker  60518 
+Deviances written on worker  60518 
+Null deviances written on worker  60518 
+Linear model fitted on worker  60496 
+Analyzed data written on worker  60539 
+Results written on worker  60539 
+Deviances written on worker  60539 
+Null deviances written on worker  60539 
+Analyzed data written on worker  60532 
+Results written on worker  60532 
+Deviances written on worker  60532 
+Null deviances written on worker  60532 
+Linear model fitted on worker  60461 
+Analyzed data written on worker  60525 
+Results written on worker  60525 
+Deviances written on worker  60525 
+Null deviances written on worker  60525 
+Linear model fitted on worker  60468 
+Analyzed data written on worker  60511 
+Results written on worker  60511 
+Deviances written on worker  60511 
+Null deviances written on worker  60511 
+Analyzed data written on worker  60504 
+Results written on worker  60504 
+Deviances written on worker  60504 
+Null deviances written on worker  60504 
+Analyzed data written on worker  60482 
+Results written on worker  60482 
+Deviances written on worker  60482 
+Null deviances written on worker  60482 
+Analyzed data written on worker  60475 
+Results written on worker  60475 
+Deviances written on worker  60475 
+Null deviances written on worker  60475 
+Analyzed data written on worker  60489 
+Results written on worker  60489 
+Deviances written on worker  60489 
+Null deviances written on worker  60489 
+Analyzed data written on worker  60496 
+Results written on worker  60496 
+Deviances written on worker  60496 
+Null deviances written on worker  60496 
+Analyzed data written on worker  60461 
+Results written on worker  60461 
+Deviances written on worker  60461 
+Null deviances written on worker  60461 
+Analyzed data written on worker  60468 
+Results written on worker  60468 
+Deviances written on worker  60468 
+Null deviances written on worker  60468 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Perform association analysis complete.
+Concatenate Results complete.
+Significance threshold:  3.603498e-06 
+Suggestive threshold:  3.603498e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "FVC"
+
+$covariates
+[1] "Age,Sex,Asthma_Status,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "MX"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/FVC"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH/GALA2_mergedLAT-LATP_noParents_030816_MX"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  MX 
+[1] "Loading data complete"
+Model formula specified:
+[1] "FVC ~ one.roh.snp + Age + Sex + Asthma_Status + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  MX 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+starting worker for localhost:11742 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  63215 
+Data prepared on worker  63222 
+Data prepared on worker  63201 
+Data prepared on worker  63208 
+Data prepared on worker  63173 
+Data prepared on worker  63194 
+Data prepared on worker  63159 
+Data prepared on worker  63187 
+Data prepared on worker  63166 
+Data prepared on worker  63180 
+Data prepared on worker  63131 
+Data prepared on worker  63152 
+Data prepared on worker  63145 
+Data prepared on worker  63124 
+Data prepared on worker  63138 
+Data prepared on worker  63117 
+Data prepared on worker  63096 
+Data prepared on worker  63089 
+Data prepared on worker  63103 
+Data prepared on worker  63110 
+Data prepared on worker  63075 
+Data prepared on worker  63082 
+Linear model fitted on worker  63215 
+Linear model fitted on worker  63222 
+Analyzed data written on worker  63215 
+Results written on worker  63215 
+Deviances written on worker  63215 
+Null deviances written on worker  63215 
+Linear model fitted on worker  63201 
+Analyzed data written on worker  63222 
+Results written on worker  63222 
+Deviances written on worker  63222 
+Null deviances written on worker  63222 
+Linear model fitted on worker  63208 
+Linear model fitted on worker  63194 
+Linear model fitted on worker  63187 
+Linear model fitted on worker  63166 
+Linear model fitted on worker  63173 
+Linear model fitted on worker  63159 
+Linear model fitted on worker  63180 
+Analyzed data written on worker  63201 
+Results written on worker  63201 
+Deviances written on worker  63201 
+Null deviances written on worker  63201 
+Linear model fitted on worker  63131 
+Analyzed data written on worker  63208 
+Results written on worker  63208 
+Deviances written on worker  63208 
+Null deviances written on worker  63208 
+Linear model fitted on worker  63152 
+Analyzed data written on worker  63194 
+Results written on worker  63194 
+Deviances written on worker  63194 
+Null deviances written on worker  63194 
+Linear model fitted on worker  63124 
+Linear model fitted on worker  63145 
+Linear model fitted on worker  63138 
+Analyzed data written on worker  63187 
+Results written on worker  63187 
+Deviances written on worker  63187 
+Null deviances written on worker  63187 
+Analyzed data written on worker  63173 
+Results written on worker  63173 
+Deviances written on worker  63173 
+Null deviances written on worker  63173 
+Analyzed data written on worker  63166 
+Results written on worker  63166 
+Deviances written on worker  63166 
+Null deviances written on worker  63166 
+Linear model fitted on worker  63117 
+Analyzed data written on worker  63159 
+Results written on worker  63159 
+Deviances written on worker  63159 
+Null deviances written on worker  63159 
+Analyzed data written on worker  63180 
+Results written on worker  63180 
+Deviances written on worker  63180 
+Null deviances written on worker  63180 
+Linear model fitted on worker  63103 
+Linear model fitted on worker  63096 
+Analyzed data written on worker  63131 
+Results written on worker  63131 
+Deviances written on worker  63131 
+Null deviances written on worker  63131 
+Linear model fitted on worker  63089 
+Linear model fitted on worker  63110 
+Linear model fitted on worker  63075 
+Analyzed data written on worker  63152 
+Results written on worker  63152 
+Deviances written on worker  63152 
+Null deviances written on worker  63152 
+Linear model fitted on worker  63082 
+Analyzed data written on worker  63145 
+Results written on worker  63145 
+Deviances written on worker  63145 
+Null deviances written on worker  63145 
+Analyzed data written on worker  63138 
+Results written on worker  63138 
+Deviances written on worker  63138 
+Null deviances written on worker  63138 
+Analyzed data written on worker  63124 
+Results written on worker  63124 
+Deviances written on worker  63124 
+Null deviances written on worker  63124 
+Analyzed data written on worker  63117 
+Results written on worker  63117 
+Deviances written on worker  63117 
+Null deviances written on worker  63117 
+Analyzed data written on worker  63103 
+Results written on worker  63103 
+Deviances written on worker  63103 
+Null deviances written on worker  63103 
+Analyzed data written on worker  63096 
+Results written on worker  63096 
+Deviances written on worker  63096 
+Null deviances written on worker  63096 
+Analyzed data written on worker  63110 
+Results written on worker  63110 
+Deviances written on worker  63110 
+Null deviances written on worker  63110 
+Analyzed data written on worker  63089 
+Results written on worker  63089 
+Deviances written on worker  63089 
+Null deviances written on worker  63089 
+Analyzed data written on worker  63075 
+Results written on worker  63075 
+Deviances written on worker  63075 
+Null deviances written on worker  63075 
+Analyzed data written on worker  63082 
+Results written on worker  63082 
+Deviances written on worker  63082 
+Null deviances written on worker  63082 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Type: DONE 
+Perform association analysis complete.
+Type: DONE 
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  3.565075e-06 
+Suggestive threshold:  3.565075e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file
+Parsed options:
+$phenotype_name
+[1] "FVC"
+
+$covariates
+[1] "Age,Sex,Asthma_Status,Obesity_Status,Height,PC1,PC2,PC3"
+
+$source_code_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/R"
+
+$population
+[1] "PR"
+
+$GALA_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH"
+
+$SAGE_ROH_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/SAGE_ROH"
+
+$scratch_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/scratch"
+
+$output_directory
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/results/FVC"
+
+$GLM_type
+[1] "gaussian"
+
+$num_cores
+[1] 22
+
+$minimum_samples_at_probe
+[1] 8
+
+$R_library_path
+[1] "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+
+$output_suffix
+[1] "ROH.R.out"
+
+$phenotype_file
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_SAGE_ROH_merged_phenotypes.txt"
+
+$input_prefix
+[1] "/media/BurchardRaid01/LabShare/Home/kkeys/Git/gala2-ROH/analyses/roh/src/../analysis/data/GALA_ROH/GALA2_mergedLAT-LATP_noParents_030816_PR"
+
+$plot_type
+[1] "png"
+
+$help
+[1] FALSE
+
+Setting variables complete.
+Loading data for population  PR 
+[1] "Loading data complete"
+Model formula specified:
+[1] "FVC ~ one.roh.snp + Age + Sex + Asthma_Status + Obesity_Status + Height + PC1 + PC2 + PC3"
+
+Running analysis for population  PR 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+starting worker for localhost:11305 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Type: EXEC 
+Data prepared on worker  65910 
+Data prepared on worker  65903 
+Data prepared on worker  65889 
+Data prepared on worker  65882 
+Data prepared on worker  65854 
+Data prepared on worker  65896 
+Data prepared on worker  65875 
+Data prepared on worker  65861 
+Data prepared on worker  65868 
+Data prepared on worker  65846 
+Data prepared on worker  65818 
+Data prepared on worker  65839 
+Data prepared on worker  65832 
+Data prepared on worker  65811 
+Data prepared on worker  65825 
+Data prepared on worker  65804 
+Data prepared on worker  65783 
+Data prepared on worker  65776 
+Data prepared on worker  65790 
+Data prepared on worker  65797 
+Data prepared on worker  65762 
+Data prepared on worker  65769 
+Linear model fitted on worker  65903 
+Linear model fitted on worker  65910 
+Linear model fitted on worker  65889 
+Analyzed data written on worker  65903 
+Results written on worker  65903 
+Deviances written on worker  65903 
+Null deviances written on worker  65903 
+Linear model fitted on worker  65896 
+Analyzed data written on worker  65910 
+Results written on worker  65910 
+Deviances written on worker  65910 
+Null deviances written on worker  65910 
+Linear model fitted on worker  65882 
+Linear model fitted on worker  65861 
+Linear model fitted on worker  65854 
+Linear model fitted on worker  65875 
+Linear model fitted on worker  65846 
+Linear model fitted on worker  65868 
+Analyzed data written on worker  65889 
+Results written on worker  65889 
+Deviances written on worker  65889 
+Null deviances written on worker  65889 
+Linear model fitted on worker  65818 
+Analyzed data written on worker  65896 
+Results written on worker  65896 
+Deviances written on worker  65896 
+Null deviances written on worker  65896 
+Linear model fitted on worker  65839 
+Analyzed data written on worker  65882 
+Results written on worker  65882 
+Deviances written on worker  65882 
+Null deviances written on worker  65882 
+Linear model fitted on worker  65832 
+Linear model fitted on worker  65811 
+Linear model fitted on worker  65825 
+Analyzed data written on worker  65875 
+Results written on worker  65875 
+Deviances written on worker  65875 
+Null deviances written on worker  65875 
+Linear model fitted on worker  65804 
+Analyzed data written on worker  65861 
+Results written on worker  65861 
+Deviances written on worker  65861 
+Null deviances written on worker  65861 
+Analyzed data written on worker  65854 
+Results written on worker  65854 
+Deviances written on worker  65854 
+Null deviances written on worker  65854 
+Linear model fitted on worker  65783 
+Linear model fitted on worker  65790 
+Analyzed data written on worker  65868 
+Results written on worker  65868 
+Deviances written on worker  65868 
+Null deviances written on worker  65868 
+Analyzed data written on worker  65846 
+Results written on worker  65846 
+Deviances written on worker  65846 
+Null deviances written on worker  65846 
+Linear model fitted on worker  65776 
+Linear model fitted on worker  65797 
+Linear model fitted on worker  65762 
+Linear model fitted on worker  65769 
+Analyzed data written on worker  65839 
+Results written on worker  65839 
+Deviances written on worker  65839 
+Null deviances written on worker  65839 
+Analyzed data written on worker  65818 
+Results written on worker  65818 
+Deviances written on worker  65818 
+Null deviances written on worker  65818 
+Analyzed data written on worker  65832 
+Results written on worker  65832 
+Deviances written on worker  65832 
+Null deviances written on worker  65832 
+Analyzed data written on worker  65825 
+Results written on worker  65825 
+Deviances written on worker  65825 
+Null deviances written on worker  65825 
+Analyzed data written on worker  65811 
+Results written on worker  65811 
+Deviances written on worker  65811 
+Null deviances written on worker  65811 
+Analyzed data written on worker  65804 
+Results written on worker  65804 
+Deviances written on worker  65804 
+Null deviances written on worker  65804 
+Analyzed data written on worker  65790 
+Results written on worker  65790 
+Deviances written on worker  65790 
+Null deviances written on worker  65790 
+Analyzed data written on worker  65783 
+Results written on worker  65783 
+Deviances written on worker  65783 
+Null deviances written on worker  65783 
+Analyzed data written on worker  65776 
+Results written on worker  65776 
+Deviances written on worker  65776 
+Null deviances written on worker  65776 
+Analyzed data written on worker  65797 
+Results written on worker  65797 
+Deviances written on worker  65797 
+Null deviances written on worker  65797 
+Analyzed data written on worker  65769 
+Results written on worker  65769 
+Deviances written on worker  65769 
+Null deviances written on worker  65769 
+Analyzed data written on worker  65762 
+Results written on worker  65762 
+Deviances written on worker  65762 
+Null deviances written on worker  65762 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+Type: DONE 
+NULL
+Type: DONE 
+Perform association analysis complete.
+Type: DONE 
+Concatenate Results complete.
+Significance threshold:  4.089007e-06 
+Suggestive threshold:  4.089007e-05 
+Computing significance threshold complete.
+NULL
+Create diagnostic plots complete.
+Summary stats written to file

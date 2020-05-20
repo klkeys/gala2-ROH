@@ -153,7 +153,7 @@ plot.type            = opt$plot_type
 
 # use for tagging saved results
 # this prints in YYYY-MM-DD format
-the.date = Sys.Date()
+#the.date = Sys.Date()
 
 
 # ==============================================================================
@@ -189,9 +189,12 @@ source(postprocessing.routines.path)
 # script variables, file paths, directories
 # ==============================================================================
 
-# Output file prefix has phenotype, population, and date
-# ex: ${outdir}/results/${PHENOTYPE}.${POP}.${YEAR}-${MONTH}-${DAY}
-out.pfx = file.path(out.dir, "results", str_c(pop.code, pheno.name, the.date, sep = "."))
+## Output file prefix has phenotype, population, and date
+## ex: ${outdir}/results/${PHENOTYPE}.${POP}.${YEAR}-${MONTH}-${DAY}
+##out.pfx = file.path(out.dir, "results", str_c(pop.code, pheno.name, the.date, sep = "."))
+# Output file prefix has phenotype + population in name
+# ex: ${outdir}/results/${POP}.${PHENOTYPE}
+out.pfx = file.path(out.dir, "results", str_c(pop.code, pheno.name, sep = "."))
 
 # output file for *concatenated* results will have similar file path`
 out.all.chr = str_c(out.pfx, "ALLCHR.txt", sep = ".")
@@ -305,8 +308,10 @@ cat("Computing significance threshold complete.\n")
 
 # Define variables for the Manhattan and QQ plot input
 # Define the output file path and the titles for each plot
-manhattan.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, the.date, "manhattan", plot.type, sep = "."))
-qq.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, the.date, "qq", plot.type, sep = "."))
+#manhattan.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, the.date, "manhattan", plot.type, sep = "."))
+#qq.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, the.date, "qq", plot.type, sep = "."))
+manhattan.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, "manhattan", plot.type, sep = "."))
+qq.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, "qq", plot.type, sep = "."))
 
 manhattan.plot.title = paste("Manhattan Plot for", pheno.name, "in", pop.code, sep = " ")
 qq.plot.title = paste("QQ Plot for", pheno.name, "in", pop.code, sep = " ")

@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-# ================================================================================
+# ========================================================================================
 # copyright Asthma Collaboratory (2020)
 # coded by Kevin L. Keys 
 #
-# This BASH script runs METAL to meta-analyze population-specific GWAS results. 
+# This BASH script runs METAL to meta-analyze population-specific ROH association results. 
 # METAL is called once for each phenotype, using all 3 populations (AA, MX, PR).
 # Each phenotype is run in serial, so analysis can take awhile.
 #
 # Call:
 #
-#     bash 04_run_metaanalysis.sh 
-# ================================================================================
+#     bash 03_run_metaanalysis.sh 
+# ========================================================================================
 
 # load environment variables
 source ../../../.env.sh
@@ -29,7 +29,6 @@ metal_genomiccontrol="ON"
 for i in ${!phenos[@]}; do
 
 pheno=${phenos[$i]}
-lm_type=${plink_lm_types[$i]}
 
 # store metaanalysis results in their own directory
 metaldir="${resultsdir}/${pheno}/meta"
@@ -41,11 +40,15 @@ metalpfx="${metaldir}/${pheno}.metaanalysis"
 # give a name to the METAL command file
 metal_commandfile="${metalpfx}.metal"
 
-# METAL effect argument differs for linear/logistic regression
-effect="BETA"
-if [[ "${lm_type}" == "logistic" ]]; then
-    effect="log(OR)"
-fi
+# METAL control parameters
+metal_marker_name="Probe"
+metal_allele_name_a1="eff_allele"
+metal_allele_name_a2="alt_allele"
+metal_effect_name="beta"
+metal_pvalue_name="p"
+metal_stderr_name="stderr"
+metal_weight_name="nsamples"
+metal_separator="COMMA"
 
 # seed METAL control file with an appropriate header
 # this clobbers any previous METAL file for the phenotype
@@ -59,16 +62,17 @@ nothingelsematters
 for j in ${!pops[@]}; do
 pop=${pops[$j]}
 
-combined_result_file="${resultsdir}/${pheno}/${pop}/${pheno}.maf001.${pop}.ALLCHR.withA2freq.assoc.${lm_type}"
+combined_result_file="${resultsdir}/phenotypes/${pheno}/results/${pop}/${pheno}.maf001.${pop}.ALLCHR.withA2freq.assoc.${lm_type}"
 
 cat << sadbuttrue >> ${metal_commandfile}
 
-MARKER SNP
-ALLELE A1 A2
-EFFECT ${effect} 
-STDERR SE
-PVALUE P
-FREQLABEL Freq
+MARKER ${metal_marker_name}
+ALLELE ${metal_allele_name_a1} ${metal_allele_name_a2} 
+EFFECT ${metal_effect_name}
+STDERR ${metal_stderr_name} 
+PVALUE ${metal_pvalue_name} 
+WEIGHT ${metal_weight_name}
+SEPARATOR ${metal_separator}
 PROCESS ${combined_result_file}
 sadbuttrue
 
