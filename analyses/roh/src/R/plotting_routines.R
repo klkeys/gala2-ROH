@@ -28,7 +28,7 @@
 
 CreateManhattanPlot = function(df, label.threshold = 5e-8, highlight.SNPs = NULL, ylims = c(0,8), color = c("gray47", "gray87"),
     point.size = 1, title = "Manhattan plot", significance.threshold = 5e-8, suggestive.threshold = 1e-7, save.as = NULL,
-    x.drop = NULL, plot.width = 7, plot.height = 7, plot.units = "in"){
+    x.drop = NULL, plot.width = 7, plot.height = 7, plot.units = "in", shape = 16){
     # Create a Manhattan Plot
     #
     # This function creates a Manhattan plot. It expects a data frame with the following four labeled columns (metadata allowed):
@@ -39,7 +39,7 @@ CreateManhattanPlot = function(df, label.threshold = 5e-8, highlight.SNPs = NULL
     #
     # Args:
     #     df: data frame with colnames [SNP, CHR, BP, P]
-    # 	  label.threshold: pvalue limit for labeling SNPs on the plot. SNPs with p-values greater than "threshold"
+    # 	  label.threshold: pvalue limit for labeling SNPs on the plot. Labels for SNPs with p-values greater than "threshold"
     #         are not plotted. BEWARE: high values of "threshold" can potentially lead to many SNPs
     #         being labeled and thereby make make plots unreadable!
     #         Default: 5e-8 (label any SNP with "standard" Bonferroni-corrected genome-wide significance)
@@ -49,7 +49,7 @@ CreateManhattanPlot = function(df, label.threshold = 5e-8, highlight.SNPs = NULL
     #     ylim: the Y-axis limits for the plot
     #         e.g. [c(min,max)]
     #         Default: c(0,8), which plots p-values up to 1e-8
-    #     color = a vector of colors (min 2 colors)
+    #     color = a vector of colors (min 2 colors) used for distinguishing chromosomes on the Manhattan plot
     #         e.g. [color = c("color1", "color2", "color3")]
     #         Default: c("gray47", "gray87")
     #     point.size = a value or vector for point size (for scaling by effect size, for instance)
@@ -73,6 +73,8 @@ CreateManhattanPlot = function(df, label.threshold = 5e-8, highlight.SNPs = NULL
     #         Default: 7
     #     plot.units: the units used to measure plotting windows
     #         Default: "in" (inches)
+    #     shape: the shape of the plotted dot (see https://ggplot2.tidyverse.org/articles/ggplot2-specs.html)
+    #         Default: 16 (a filled circle)
     # Outputs:
     #    g is a ggplot object containing the Manhattan plot
 
@@ -84,7 +86,7 @@ CreateManhattanPlot = function(df, label.threshold = 5e-8, highlight.SNPs = NULL
         summarise(chr_len = max(BP)) %>%
 
         # Calculate cumulative position of each chromosome
-        mutate(tot = cumsum(chr_len) - chr_len) %>%
+        mutate(tot = cumsum(as.numeric(chr_len)) - as.numeric(chr_len)) %>%
         dplyr::select(-chr_len) %>%
 
         # Add this info to the initial dataset
@@ -92,45 +94,48 @@ CreateManhattanPlot = function(df, label.threshold = 5e-8, highlight.SNPs = NULL
 
         # Add a cumulative position of each SNP
         arrange(CHR, BP) %>%
-        mutate(BPcum = BP + tot) %>%
+        mutate(BPcum = as.numeric(BP + tot)) %>%
 
         # Add highlight and annotation information
         mutate(is_highlight = ifelse(SNP %in% highlight.SNPs, "yes", "no")) %>%
         mutate(is_annotate = ifelse(P < label.threshold, "yes", "no"))  ### done filtering!
 
     # get chromosome center positions for x-axis
-    axisdf = df.tmp %>% group_by(CHR) %>% summarize(center = (max(BPcum) + min(BPcum)) / 2 )
+    axisdf = df.tmp %>%
+        group_by(CHR) %>%
+        summarize(center = (as.numeric(max(BPcum)) + as.numeric(min(BPcum))) / 2 )
 
-	# get chromosome center positions for x-axis
-	# remove selected chromosome labels
-	axisdf = df.tmp %>% group_by(CHR) %>% summarize(center = (max(BPcum) + min(BPcum)) / 2 )
-
+    ## TODO: fix character vs. numeric distinction here, maybe need, e.g. c("19", "21") vs. c(19,21)
     # remove selected chromosome labels, if requested
-    if(!is.null(x.drop) & is.numeric(x.drop)) {
-        axisdf[axisdf$CHR %in% x.drop, ]$CHR = ""
+    if(!is.null(x.drop)) {
+        if(is.numeric(x.drop)){
+            stopifnot(all(x.drop %in% c(1:22)))
+        }
+        axisdf = axisdf %>% dplyr::filter(!(axisdf$CHR %in% x.drop))
     }
 
     # plot with filtered data frame
     # we will construct this ggplot stepwise
     g = ggplot(df.tmp, aes(x = BPcum, y = -log10(P)))
 
-
     # Show all points
-	g = g + geom_point(aes(color = as.factor(CHR), size = point.size), alpha = 0.8) +
-    scale_color_manual(values = rep(color, 22))
+	g = g + geom_point(aes(color = as.factor(CHR), size = point.size), alpha = 0.8, shape = shape) +
+        scale_color_manual(values = rep(color, 22))
 
     # custom X axis
     # note: expand = c(0, 0) removes space between plot area and x axis
+	# rotate X axis ticks to declutter a bit 
     g = g + scale_x_continuous(label = axisdf$CHR, breaks = axisdf$center) +
-    scale_y_continuous(expand = c(0, 0), limits = ylims)
+        scale_y_continuous(expand = c(0, 0), limits = ylims)
 
     # add plot and axis titles
-    g = g + ggtitle(paste0(title)) + labs(x = "Chromosome")
-
+    #g = g + ggtitle(paste0(title)) + labs(x = "Chromosome", y = bquote("-log" ~ subscriptstyle(10) ~ "(" ~ p ~ ")"))
+    g = g + ggtitle(paste0(title)) + labs(x = "Chromosome", y = bquote(-log[10](p)))
+    #labs(x = "Chromosome", y = "-log10(p)")#labs(x = "Chromosome", y = bquote("-log" ~ subscriptstyle(10) ~ "(" ~ p ~ ")")
 
     # add genome-wide significant.threshold and suggestive.threshold lines
     g = g + geom_hline(yintercept = -log10(significance.threshold), color = "red") +
-    geom_hline(yintercept = -log10(suggestive.threshold), linetype = "dashed", color = "blue")
+        geom_hline(yintercept = -log10(suggestive.threshold), linetype = "dashed", color = "blue")
 
     # add highlighted points
     g = g + geom_point(data = subset(df.tmp, is_highlight == "yes"), color = "orange", size = point.size)
@@ -227,6 +232,47 @@ CreateQQPlot = function(df, title = "QQ Plot", subtitle = NULL, xlim = NULL, yli
         ggsave(save.as, plot = g, width = plot.width, height = plot.height, units = plot.units)
     }
     return(g)
+}
+
+CreateVolcanoPlot = function(df, sig = 5e-8, sug = 1e-7,  beta.sig = 2, pval.label = 1e-7, beta.label = 6,
+	ylims = c(0,8), title = "Volcano plot", sig.color="purple3", sug.color="salmon", base.color="grey47", 
+	save.as = NULL, show.x.axis=TRUE, show.y.label=TRUE, plot.width = 7, plot.height = 7, plot.units = "in"){
+
+	df.tmp <- df %>%
+		mutate(
+			threshold = ifelse(
+				abs(BETA) >= beta.sig & P <= sig, "A",
+				ifelse(
+					abs(BETA) >= beta.sig & P > sig & P <= sug , "B", "C")
+				)
+	)
+
+	# create plot piece-wise
+	g = ggplot(df.tmp, aes(x=BETA, y=-log10(P), label = SNP)) + geom_point(aes(colour=threshold), alpha=0.5, size=4.5, shape=19)
+		+ scale_colour_manual(values = c("A"=sig.color, "B"=sug.color, "C"=base.color))
+
+	# adjust theme and y-axis; remove extra white space
+	g = g + scale_y_continuous(expand = c(0, 0), limits = ylims)
+
+	if(show.x.axis == FALSE) { x.status = element_blank() } else { x.status = element_text() }
+	if(show.y.label == FALSE){ y.status = element_blank() } else { y.status = element_text() }
+
+	g = g + theme_classic(base_size = 25) + 
+		theme(plot.title = element_text(hjust = 0.5), 
+			legend.position="none",
+			axis.title.x = x.status,
+			axis.title.y = y.status
+		)
+
+	# add labels
+	g = g + ggtitle(title) + xlab("Beta")
+	g = g + geom_text_repel( data=subset(df.tmp, P <= pval.label & abs(BETA) >= beta.label), aes(BETA, -log10(P)) )
+
+	# save to file?
+	if (!is.null(save.as)) {
+		ggsave(save.as, plot = g, width = plot.width, height = plot.height, units = plot.units)
+	}
+	return(g)
 }
 
 

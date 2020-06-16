@@ -20,6 +20,8 @@
 # so be very careful when cleaning workspaces!
 # ==============================================================================
 
+library(here)
+
 # ==============================================================================
 # function definitions
 # ==============================================================================
@@ -55,15 +57,15 @@ AutoloadPackages = function(vector.of.package.names, library.path){
 # ==============================================================================
 # environment variables
 # ==============================================================================
-cran.mirror     = "https://cran.cnr.berkeley.edu/"  # use UC Berkeley CRAN mirror
+cran.mirror     = "http://cran.rstudio.com"  # use RStudio mirror
 max.print.lines = 200  # default number of lines to print
 editor          = "vim"  # default text editor
-library.path    = "/media/BurchardRaid01/LabShare/Data/share_data_projectInProgress/ROH_project/R_libraries"
+library.path    = file.path(here(), "R_library")  
 bitmap.type     = "cairo"  # needed for producing raster plots
 
 # this vector should contain all packages required for analysis
 auto.loads = c("assertthat", "coda", "data.table", "doParallel", "dplyr", "ggplot2",
-    "ggpubr", "ggrepel", "grid", "gridExtra", "MASS", "optparse", "qqman",
+    "ggrepel", "grid", "gridExtra", "MASS", "optparse", "qqman",
     "RColorBrewer", "readr", "reshape2", "stringr", "doSNOW")
 
 # ==============================================================================
@@ -98,4 +100,7 @@ options(menu.graphics = FALSE)
 options(bitmapType = bitmap.type)
 
 # autoload packages
-AutoloadPackages(auto.loads, library.path)
+#AutoloadPackages(auto.loads, library.path)
+for (lib in auto.loads){
+    library(lib, character.only = TRUE)
+}
