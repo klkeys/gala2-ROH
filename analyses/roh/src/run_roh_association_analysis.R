@@ -155,6 +155,31 @@ plot.type            = opt$plot_type
 # this prints in YYYY-MM-DD format
 #the.date = Sys.Date()
 
+# use these dictionaries to translate phenotype and pop names for plotting
+phenotype.names = list(
+    "Asthma_Status" = "Asthma Status",
+    "Pre_FEV1"      = "Pre-FEV1",
+    "Post_FEV1"     = "Post-FEV1",
+    "BDR"           = "BDR",
+    "Pre_FVC"       = "Pre-FVC",
+    "FVC"           = "Pre-FVC"
+)
+
+pop.names = list(
+    "AA" = "African Americans",
+    "MX" = "Mexican Americans",
+    "PR" = "Puerto Ricans"
+)
+
+# taken from ggplot2 cookbook: http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/
+# AA is reddish purple 
+# MX is orange
+# PR is bluish green
+plot.colors = list(
+    "AA" = "#CC79A7",
+    "MX" = "#E69F00",
+    "PR" = "#009E73"
+)
 
 # ==============================================================================
 # source analysis functions from external codebase 
@@ -247,18 +272,18 @@ cat("\n")
 
 cat("Running analysis for population ", pop.code, "\n")
 
-# this runs association for each chromosome over one population
-PerformAssociationAnalysis(
-    input.prefix  = input.prefix,
-    output.prefix = out.pfx,
-    phenotype.df  = phenotype.df,
-    model.formula = model.formula,
-    suffix        = out.suffix,
-    type          = glm.type,
-    ncores        = ncores,
-    min.samples.at.probe = min.samples.at.probe,
-    library.path  = library.path
-)
+#### this runs association for each chromosome over one population
+###PerformAssociationAnalysis(
+###    input.prefix  = input.prefix,
+###    output.prefix = out.pfx,
+###    phenotype.df  = phenotype.df,
+###    model.formula = model.formula,
+###    suffix        = out.suffix,
+###    type          = glm.type,
+###    ncores        = ncores,
+###    min.samples.at.probe = min.samples.at.probe,
+###    library.path  = library.path
+###)
 
 cat("Perform association analysis complete.\n")
 
@@ -313,8 +338,13 @@ cat("Computing significance threshold complete.\n")
 manhattan.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, "manhattan", plot.type, sep = "."))
 qq.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, "qq", plot.type, sep = "."))
 
-manhattan.plot.title = paste("Manhattan Plot for", pheno.name, "in", pop.code, sep = " ")
-qq.plot.title = paste("QQ Plot for", pheno.name, "in", pop.code, sep = " ")
+#manhattan.plot.title = paste("Manhattan Plot for", pheno.name, "in", pop.code, sep = " ")
+#qq.plot.title = paste("QQ Plot for", pheno.name, "in", pop.code, sep = " ")
+manhattan.plot.title = paste("Manhattan Plot for", phenotype.names[[pheno.name]], "in", pop.names[[pop.code]], sep = " ")
+qq.plot.title = paste("QQ Plot for", phenotype.names[[pheno.name]], "in", pop.names[[pop.code]], sep = " ")
+
+# get secondary plot color from pop.code
+secondary.plot.color = plot.colors[[pop.code]] 
 
 # plot both Manhattan plots and QQ plots
 # the function also calculates the genomic inflation lambda as well
@@ -326,7 +356,8 @@ CreateDiagnosticPlots(out.all.chr,
     qq.plot.title          = qq.plot.title,
     threshold              = threshold,
     significance.threshold = significance.threshold,
-    suggestive.threshold   = suggestive.threshold
+    suggestive.threshold   = suggestive.threshold,
+    color                  = c("black", secondary.plot.color)
 )
 
 cat("Create diagnostic plots complete.\n")

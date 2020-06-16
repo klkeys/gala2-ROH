@@ -59,10 +59,14 @@ VERBOSE ${metal_verbose}
 GENOMICCONTROL ${metal_genomiccontrol} 
 nothingelsematters
 
+echo ${plink_lm_types[0]}
+
 for j in ${!pops[@]}; do
 pop=${pops[$j]}
+#lm_type=${plink_lm_types[$j]}
+lm_type="gaussian"
 
-combined_result_file="${resultsdir}/phenotypes/${pheno}/results/${pop}/${pheno}.maf001.${pop}.ALLCHR.withA2freq.assoc.${lm_type}"
+combined_result_file="${resultsdir}/${pheno}/results/${pop}.${pheno}.ALLCHR.txt"
 
 cat << sadbuttrue >> ${metal_commandfile}
 
