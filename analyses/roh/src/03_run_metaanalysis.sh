@@ -94,3 +94,5 @@ entersandman
 ${METAL} ${metal_commandfile}
 
 done # end loop over phenos
+
+# plot results

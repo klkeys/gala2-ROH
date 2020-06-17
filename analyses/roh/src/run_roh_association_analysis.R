@@ -272,18 +272,18 @@ cat("\n")
 
 cat("Running analysis for population ", pop.code, "\n")
 
-#### this runs association for each chromosome over one population
-###PerformAssociationAnalysis(
-###    input.prefix  = input.prefix,
-###    output.prefix = out.pfx,
-###    phenotype.df  = phenotype.df,
-###    model.formula = model.formula,
-###    suffix        = out.suffix,
-###    type          = glm.type,
-###    ncores        = ncores,
-###    min.samples.at.probe = min.samples.at.probe,
-###    library.path  = library.path
-###)
+# this runs association for each chromosome over one population
+PerformAssociationAnalysis(
+    input.prefix  = input.prefix,
+    output.prefix = out.pfx,
+    phenotype.df  = phenotype.df,
+    model.formula = model.formula,
+    suffix        = out.suffix,
+    type          = glm.type,
+    ncores        = ncores,
+    min.samples.at.probe = min.samples.at.probe,
+    library.path  = library.path
+)
 
 cat("Perform association analysis complete.\n")
 
@@ -333,31 +333,43 @@ cat("Computing significance threshold complete.\n")
 
 # Define variables for the Manhattan and QQ plot input
 # Define the output file path and the titles for each plot
-#manhattan.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, the.date, "manhattan", plot.type, sep = "."))
-#qq.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, the.date, "qq", plot.type, sep = "."))
 manhattan.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, "manhattan", plot.type, sep = "."))
 qq.plot.filepath = file.path(out.dir, "figures", paste(pop.code, pheno.name, "qq", plot.type, sep = "."))
 
-#manhattan.plot.title = paste("Manhattan Plot for", pheno.name, "in", pop.code, sep = " ")
-#qq.plot.title = paste("QQ Plot for", pheno.name, "in", pop.code, sep = " ")
-manhattan.plot.title = paste("Manhattan Plot for", phenotype.names[[pheno.name]], "in", pop.names[[pop.code]], sep = " ")
-qq.plot.title = paste("QQ Plot for", phenotype.names[[pheno.name]], "in", pop.names[[pop.code]], sep = " ")
+manhattan.plot.title = paste("HZ Mapping of", phenotype.names[[pheno.name]], "in", pop.names[[pop.code]], sep = " ")
+qq.plot.title = paste("HZ Mapping of", phenotype.names[[pheno.name]], "in", pop.names[[pop.code]], sep = " ")
 
 # get secondary plot color from pop.code
 secondary.plot.color = plot.colors[[pop.code]] 
 
 # plot both Manhattan plots and QQ plots
-# the function also calculates the genomic inflation lambda as well
-## NOTE - you may need to change the axis limits of the QQ plots depending on the significance of your GWAS results
-CreateDiagnosticPlots(out.all.chr,
-    manhattan.plot.filepath,
-    qq.plot.filepath,
-    manhattan.plot.title   = manhattan.plot.title,
-    qq.plot.title          = qq.plot.title,
-    threshold              = threshold,
+gwas.df.sub = results.df %>%
+    dplyr::select(chr, position, Probe, p) %>%
+    rename(CHR = "chr", BP = "position", SNP = "Probe", P = "p") %>%
+    dplyr::filter(P > 1e-10) ## tiny p-values are usually artifacts
+
+# create manhattan plot
+g1 = CreateManhattanPlot(gwas.df.sub,
+    ylims  = c(0,10),
+    color  = c("black", secondary.plot.color),
+    x.drop = c(15,17,19,21),
+    title  = manhattan.plot.title, 
     significance.threshold = significance.threshold,
     suggestive.threshold   = suggestive.threshold,
-    color                  = c("black", secondary.plot.color)
+    label.threshold        = 1e-16,
+    save.as     = manhattan.plot.filepath,
+    plot.width  = 11, 
+    plot.height = 8,
+    plot.units  = "in"
+)
+
+# make QQ plot
+g2 = CreateQQPlot(gwas.df.sub,
+    title       = qq.plot.title, 
+    save.as     = qq.plot.filepath,
+    plot.width  = 7,
+    plot.height = 7,
+    plot.units  = "in"
 )
 
 cat("Create diagnostic plots complete.\n")
@@ -365,10 +377,10 @@ cat("Create diagnostic plots complete.\n")
 # save a file for summary statistics
 data.for.pheno = na.omit(subset(phenotype.df, select=c("SubjectID", pheno.name, unlist(str_split(covariate.list, ",")))))
 reg.type = ifelse(glm.type == "gaussian", "linear", "logistic")
-N = dim(data.for.pheno)[1]
-if ( reg.type == "logistic") {
-    category0_N = sum(data.for.pheno[, pheno.name] == 0, na.rm = TRUE)
-    category1_N = sum(data.for.pheno[, pheno.name] == 1, na.rm = TRUE)
+N = nrow(data.for.pheno)
+if ( reg.type == "logistic" ) {
+    category0_N = sum(data.for.pheno[[pheno.name]] == 0, na.rm = TRUE)
+    category1_N = sum(data.for.pheno[[pheno.name]] == 1, na.rm = TRUE)
     my.mean     = NA
     my.median   = NA
     my.25thpc   = NA

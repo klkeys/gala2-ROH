@@ -1,4 +1,4 @@
-#!/usr/bin/env Rscript --vanilla
+##!/usr/bin/env Rscript --vanilla
 # ==============================================================================
 # Copyright Asthma Collaboratory (2018)
 # Coded by Kevin L. Keys and Jennifer R. Liberto
@@ -60,7 +60,8 @@ AutoloadPackages = function(vector.of.package.names, library.path){
 cran.mirror     = "http://cran.rstudio.com"  # use RStudio mirror
 max.print.lines = 200  # default number of lines to print
 editor          = "vim"  # default text editor
-library.path    = file.path(here(), "R_library")  
+#library.path    = file.path(here(), "R_library")  
+library.path    = "/media/BurchardRaid01/LabShare/Home/kkeys/software/R/R-3.5.1/lib64/R/library"
 bitmap.type     = "cairo"  # needed for producing raster plots
 
 # this vector should contain all packages required for analysis
